@@ -1,0 +1,322 @@
+/* MASTER STYLES */
+body {
+margin: 0%;
+font-family: "Lato", sans-serif;
+max-width: 1400px;
+margin: auto;
+}
+
+/*.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}*/
+
+/* NAV STYLES */
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 2px solid rgb(185, 22, 22);
+    border-top: 2px solid rgb(185, 22, 22);
+}
+
+.navigation > div {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 30x;
+}
+
+.nav-link-wrapper a {
+    color: rgb(226, 226, 31);
+    text-decoration: none;
+    transition: color 0.5s;
+    font-weight: bold;
+}
+
+.nav-link-wrapper a:hover{
+    color: rgb(185, 22, 22);
+}
+
+
+.quote {
+    text-align: center;
+    padding: 10px;
+}
+
+.comingsoon {
+    text-align: center;
+    padding: 100px;
+    font-size: xx-large;
+}
+
+/* PORTFOLIO STYLES */
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+
+}
+
+.blurbox {
+  background: rgb(0,0,0, 0.6);
+  color: white;
+  border: 2px solid #f1f1f1;
+  z-index: 2;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.img-text-wrapper a {
+    text-decoration: none;
+    transition: color 0.5s;
+    color: white;
+}
+
+.img-text-wrapper a:hover{
+    color: blue;
+}
+
+/******** ABOUT *******/
+
+.about-description {
+    /*box-sizing: content-box;*/
+    /*box-shadow: 2px 2px #c2c0c0;*/
+    /*border-radius: 5px;*/
+    position: relative;
+    /*display: flex;*/
+}
+
+.about-text {
+    width: auto;
+    text-align: center;
+}
+
+/*.about-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin: auto;
+}*/
+
+
+.tutor_btn {
+    color: rgb(226, 226, 31);
+    text-decoration: none;
+    transition: color 0.5s;
+    font-weight: bold;
+}
+
+
+/****Notes styles******/
+
+.portfolio-items-wrapper-notes {
+    /*display: grid;
+    grid-template-columns: 200px;
+    align-items: center;
+    justify-items: center;*/
+    /*margin-left: 40%;
+    margin-right: 40%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.portfolio-item-wrapper-notes {
+    position: relative;
+}
+
+
+.portfolio-img-background-notes {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 400px;
+}
+
+.img-text-wrapper-notes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+
+}
+
+.img-text-wrapper-notes a {
+    text-decoration: none;
+    transition: color 0.5s;
+    color: white;
+}
+
+.img-text-wrapper-notes a:hover{
+    color: blue;
+}
+
+
+/***************CONTACTS*************/
+
+.contact-section{
+    padding: 40px;
+}
+
+.contact-section h3{
+    text-align: center;
+    color:rgb(226, 226, 31);
+}
+
+.contact-form{
+    max-width: 700px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    padding: 10px 10px;   
+    border-width: 2px;
+    border-color: rgb(185, 22, 22); 
+    border-radius: 5px;
+}
+
+textarea.contact-form-text{
+    resize:none;
+    height: 200px;
+    border-width: 2px;
+}
+
+.contact-form-btn{
+    float: right;
+    color:rgb(226, 226, 31);
+    background-color: rgb(185, 22, 22);
+    padding: 12px 40px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+}
+
+
+
+
+/*********** INDEX ***********/
+.index-description {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+hr {
+    border-top: 2px solid rgb(185, 22, 22);
+}
+
+h3 {
+    color: rgb(226, 226, 31);
+}
+
+.provideindex {
+    display: flex;
+}
+
+.Notes_pic {
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.exercise_pic {
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+} 
+
+.Coursework_pic {
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+} 
+
+/************ FOOTER *************/
+.footer {
+    background: white;
+    height: 100px;
+    position: relative;
+    width: auto;
+    margin-top: auto;
+}
+
+.footer-content {
+    height: 60px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 15px;
+
+}
+
+.footer-bottom {
+    background: whitesmoke;
+    height: 40px;
+    width:100%;
+
+    text-align: center;
+    position: absolute;
+    padding-top: 20px;
+    font-size: small;
+}
