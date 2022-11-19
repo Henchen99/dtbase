@@ -12,12 +12,16 @@ margin: auto;
 }*/
 
 /* NAV STYLES */
+.Logo {
+    background-color: rgb(173, 173, 173);
+}
+
 .logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 400px;
-    height: 200px;
+    height: 150px;
     align-items: center;
     justify-content: center;
 }
@@ -40,7 +44,7 @@ margin: auto;
 }
 
 .nav-link-wrapper a {
-    color: rgb(226, 226, 31);
+    color: rgb(214, 214, 23);
     text-decoration: none;
     transition: color 0.5s;
     font-weight: bold;
@@ -54,6 +58,7 @@ margin: auto;
 .quote {
     text-align: center;
     padding: 10px;
+    background-color: whitesmoke;
 }
 
 .comingsoon {
@@ -116,7 +121,7 @@ margin: auto;
     color: blue;
 }
 
-/******** ABOUT *******/
+/******** ABOUT TUTORING *******/
 
 .about-description {
     /*box-sizing: content-box;*/
@@ -129,6 +134,14 @@ margin: auto;
 .about-text {
     width: auto;
     text-align: center;
+    border:2px solid;
+    border-color: rgb(185, 22, 22);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+
 }
 
 /*.about-pic {
@@ -146,6 +159,19 @@ margin: auto;
     font-weight: bold;
 }
 
+.contactmebtn {
+    max-width: 135px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgb(226, 226, 31);
+    text-align: center;
+    cursor: pointer;  
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.5s;
+}
 
 /****Notes styles******/
 
@@ -211,7 +237,7 @@ margin: auto;
 
 .contact-section h3{
     text-align: center;
-    color:rgb(226, 226, 31);
+    color:black;
 }
 
 .contact-form{
@@ -246,6 +272,16 @@ textarea.contact-form-text{
     cursor: pointer;
     border: 0;
     border-radius: 5px;
+    font-weight: bold;
+
+    /* max-width: 135px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgb(226, 226, 31);
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.5s; */
 }
 
 
@@ -255,8 +291,23 @@ textarea.contact-form-text{
 .index-description {
     text-align: center;
     padding: 10px;
-    margin-top: 20px;
+    margin: 20px;
 }
+
+.website-introduction {
+    text-align: center;
+    padding: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.tutoring {
+    text-align: center;
+    padding: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 hr {
     border-top: 2px solid rgb(185, 22, 22);
 }
@@ -307,11 +358,11 @@ h3 {
     text-align: center;
     line-height: 65px;
     font-size: 15px;
-
+    background-color: whitesmoke;
 }
 
 .footer-bottom {
-    background: whitesmoke;
+    background: rgb(173, 173, 173);
     height: 40px;
     width:100%;
 
