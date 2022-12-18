@@ -180,7 +180,7 @@ body {
 .about-text {
     width: auto;
     text-align: center;
-    border:2px solid rgb(185, 22, 22);
+    /* border:2px solid rgb(185, 22, 22); */
     background-color: rgb(238,238,238);
     margin-left: 10%;
     margin-right: 10%;
@@ -199,7 +199,7 @@ body {
     padding: 10px;
     margin-left: 10%;
     margin-right: 10%;
-    border:2px solid rgb(185, 22, 22);
+    /* border:2px solid rgb(185, 22, 22); */
     position: relative;
 }
 
@@ -240,7 +240,8 @@ body {
 }
 
 .contactmebtn a:hover{
-    color: rgb(0, 204, 255);
+    color: rgb(185, 22, 22)
+    /* rgb(0, 204, 255); */
 }
 
 .returnHomeBtn {
