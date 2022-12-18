@@ -658,6 +658,13 @@ h3 {
         background-color: rgb(238,238,238);
     }
     
+    .tutoring {
+        text-align: center;
+        padding: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: rgb(238,238,238);
+    }
 }
 
 @media only screen and (max-width: 530px) {
@@ -699,13 +706,6 @@ h3 {
         color: rgb(0, 204, 255);
     }
 
-    .website-introduction {
-        text-align: center;
-        padding: 10px;
-        margin-left: 10%;
-        margin-right: 10%;
-        background-color: rgb(238,238,238);
-    }
 }
 
 @media only screen and (max-width: 420px) {
@@ -753,13 +753,5 @@ h3 {
     
     .img-text-wrapper a:hover{
         color: rgb(0, 204, 255);
-    }
-
-    .website-introduction {
-        text-align: center;
-        padding: 10px;
-        margin-left: 10%;
-        margin-right: 10%;
-        background-color: rgb(238,238,238);
     }
 }
