@@ -194,11 +194,11 @@ body {
 }
 
 .about_tutoring_text {
-    max-width: 600px;
+    max-width: 800px;
     text-align: center;
     padding: 10px;
-    margin-left: 10%;
-    margin-right: 10%;
+    /* margin-left: 10%;
+    margin-right: 10%; */
     /* border:2px solid rgb(185, 22, 22); */
     position: relative;
 }
@@ -400,8 +400,8 @@ textarea.contact-form-text{
 .website-introduction {
     text-align: center;
     padding: 10px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     background-color: rgb(238,238,238);
 }
 
@@ -417,9 +417,42 @@ hr {
     border-top: 2px solid rgb(185, 22, 22);
 }
 
-h3 {
-    color: rgb(198, 198, 27);
-}
+
+:root {
+    --h3-color: color: rgb(198, 198, 27);
+ }
+  
+    h3 {
+        color: var(--h3-color);
+    }
+
+    .website-introduction {
+        --h3-color: black;
+    }
+
+    .provideindex {
+        --h3-color: rgb(198, 198, 27);
+    }
+
+:root {
+    --font-weight: normal;
+  }
+  
+  h3 {
+    font-weight: var(--font-weight);
+  }
+  
+  .website-introduction {
+    --font-weight: lighter;
+  }
+  
+  .provideindex {
+    --font-weight: 700;
+  }
+
+  .contact-section {
+    --font-weight: 700;
+  }
 
 .provideindex {
     display: flex;
@@ -657,7 +690,8 @@ h3 {
         margin-right: 10%;
         background-color: rgb(238,238,238);
     }
-    
+
+
     .tutoring {
         text-align: center;
         padding: 10px;
