@@ -686,8 +686,8 @@ hr {
     .website-introduction {
         text-align: center;
         padding: 10px;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
         background-color: rgb(238,238,238);
     }
 
@@ -787,5 +787,9 @@ hr {
     
     .img-text-wrapper a:hover{
         color: rgb(0, 204, 255);
+    }
+
+    h1{
+        font-size: 25px;
     }
 }
