@@ -214,10 +214,23 @@ body {
 
 
 .tutor_btn {
-    color: rgb(198, 198, 27);
     text-decoration: none;
     transition: color 0.5s;
     font-weight: bold;
+    /* color: rgb(198, 198, 27); */
+    display: inline;
+}
+
+.tutor_btn a {
+    text-decoration: none;
+    color: rgb(198, 198, 27);
+    transition: color 0.5s;
+    font-weight: bold;
+}
+
+.tutor_btn a:hover{
+    color:rgb(185, 22, 22);
+    /* rgb(0, 204, 255); */
 }
 
 .contactmebtn {
