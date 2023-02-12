@@ -320,6 +320,17 @@ body {
     width: 100%;
 }
 
+.portfolio-img-background-coursework {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.85;
+    height: 150px;
+    width: 100%;
+    background-color:rgb(220,220,220);
+    /* border-bottom: 2px solid rgb(185, 22, 22); */
+}
+
 .img-text-wrapper-notes {
     position: absolute;
     top: 50%;
@@ -509,6 +520,95 @@ hr {
     margin-bottom: 10px;
 } 
 
+
+/**********COURSEWORK***********/
+
+/* .coursework-example{
+    display: grid;
+    grid-template-columns: 80% auto;
+} */
+
+.coursework-quote{
+    text-align: center;
+    padding: 10px;
+    background-color: whitesmoke;
+    font-size: large;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+    width: 100%;
+    /* border: 2px solid rgb(185, 22, 22); */
+}
+
+.portfolio-item-wrapper-notes-coursework{
+    position: relative;
+}
+
+/* .drop_down {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70px;
+    height: 21px;
+}
+
+.drop_down .bar {
+    display: block;
+    height: 3px;
+    width: 100%;
+    margin: 5px auto;
+    background-color: rgb(214, 214, 23);
+    border-radius: 10px;
+}
+
+.drop_down {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    color: black;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.drop_down.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.drop_down.active .bar:nth-child(1){
+    width: 30px;
+    transform: translateY(8px) rotate(45deg);
+}
+
+.drop_down.active .bar:nth-child(3){
+    width: 30px;
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* .coursework_dropdown{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 2px solid rgb(185, 22, 22);
+    border-top: 2px solid rgb(185, 22, 22);
+    font-size: large;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.portfolio-item-wrapper-notes-coursework{
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    flex-direction: column;
+}
+
+.portfolio-item-wrapper-notes-coursework.active{
+    display: flex;
+    
+} */ */
+
 /************ FOOTER *************/
 .footer {
     background: white;
@@ -585,6 +685,8 @@ hr {
         margin-bottom: 10px;
     } 
 }
+
+
 
 @media only screen and (max-width: 650px) { /*Nav bar squishes, need to collapse*/
     .hamburger{
