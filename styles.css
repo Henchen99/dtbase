@@ -523,19 +523,31 @@ hr {
 
 /**********COURSEWORK***********/
 
-/* .coursework-example{
+.coursework_dropdown{
+    display: flex;
+    /* justify-content: space-between; */
+    border-bottom: 2px solid rgb(185, 22, 22);
+    /* border-top: 2px solid rgb(185, 22, 22); */
+    font-size: large;
+    flex-direction: column;
+    align-items: flex-start;
+    display: grid;
+}
+
+.coursework-example-container{
     display: grid;
     grid-template-columns: 80% auto;
-} */
+}
 
 .coursework-quote{
     text-align: center;
     padding: 10px;
+    width: 100%;
     background-color: whitesmoke;
     font-size: large;
     font-weight: bold;
     font-family: "Lato", sans-serif;
-    width: 100%;
+    /* border-bottom: 2px solid rgb(185, 22, 22); */
     /* border: 2px solid rgb(185, 22, 22); */
 }
 
@@ -543,13 +555,15 @@ hr {
     position: relative;
 }
 
-/* .drop_down {
-    position: absolute;
-    display: none;
+.drop_down {
     flex-direction: column;
     justify-content: space-between;
     width: 70px;
-    height: 21px;
+    height: 99%;
+    display: inline-block;
+    width: 100%;
+    background-color: whitesmoke;
+    /* border-bottom: 2px solid rgb(185, 22, 22); */
 }
 
 .drop_down .bar {
@@ -559,55 +573,40 @@ hr {
     margin: 5px auto;
     background-color: rgb(214, 214, 23);
     border-radius: 10px;
-}
-
-.drop_down {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
-    color: black;
-    width: 100%;
-    background-color: whitesmoke;
 }
 
-.drop_down.active .bar:nth-child(2){
-    opacity: 0;
+.drop_down .bar:nth-child(1){
+    width: 30px;
+    transform: translateY(32px) rotate(45deg);
+}
+
+.drop_down .bar:nth-child(2){
+    width: 30px;
+    transform: translateY(44px) rotate(-45deg);
 }
 
 .drop_down.active .bar:nth-child(1){
     width: 30px;
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(45px) rotate(-45deg);
 }
 
-.drop_down.active .bar:nth-child(3){
+.drop_down.active .bar:nth-child(2){
     width: 30px;
-    transform: translateY(-8px) rotate(-45deg);
-}
-
-/* .coursework_dropdown{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    border-bottom: 2px solid rgb(185, 22, 22);
-    border-top: 2px solid rgb(185, 22, 22);
-    font-size: large;
-    flex-direction: column;
-    align-items: flex-start;
+    transform: translateX(-20px) translateY(38px) rotate(45deg);
 }
 
 .portfolio-item-wrapper-notes-coursework{
     display: none;
     width: 100%;
     text-align: center;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     flex-direction: column;
 }
 
 .portfolio-item-wrapper-notes-coursework.active{
     display: flex;
-    
-} */ */
+} 
 
 /************ FOOTER *************/
 .footer {
@@ -742,7 +741,7 @@ hr {
 
 
 /* If 650px doesnt fix everything add another */
-@media only screen and (max-width: 600px) { /*My phone width is 393, so say 400 and below*/
+@media only screen and (max-width: 602px) { /*My phone width is 393, so say 400 and below*/
     .provideindex {
         /* display: flex; */
         background-color: rgb(238,238,238);
@@ -815,6 +814,26 @@ hr {
         margin-left: 10%;
         margin-right: 10%;
         background-color: rgb(238,238,238);
+    }
+
+    .drop_down .bar:nth-child(1){
+        width: 30px;
+        transform: translateY(45px) rotate(45deg);
+    }
+    
+    .drop_down .bar:nth-child(2){
+        width: 30px;
+        transform: translateY(57px) rotate(-45deg);
+    }
+    
+    .drop_down.active .bar:nth-child(1){
+        width: 30px;
+        transform: translateY(58px) rotate(-45deg);
+    }
+    
+    .drop_down.active .bar:nth-child(2){
+        width: 30px;
+        transform: translateX(-20px) translateY(51px) rotate(45deg);
     }
 }
 
@@ -908,5 +927,27 @@ hr {
 
     h1{
         font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .drop_down .bar:nth-child(1){
+        width: 30px;
+        transform: translateY(58px) rotate(45deg);
+    }
+    
+    .drop_down .bar:nth-child(2){
+        width: 30px;
+        transform: translateY(70px) rotate(-45deg);
+    }
+    
+    .drop_down.active .bar:nth-child(1){
+        width: 30px;
+        transform: translateY(71px) rotate(-45deg);
+    }
+    
+    .drop_down.active .bar:nth-child(2){
+        width: 30px;
+        transform: translateX(-20px) translateY(64px) rotate(45deg);
     }
 }

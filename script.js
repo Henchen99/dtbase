@@ -24,3 +24,16 @@ toggleButton.addEventListener('click', () => {
     });
 
 });
+
+const toggleArrow = document.getElementsByClassName('drop_down')[0];
+const courseworkDropdown = document.getElementsByClassName('Coursework_dropdown')[0];
+const courseworkDrop = document.querySelectorAll('.portfolio-item-wrapper-notes-coursework');
+
+toggleArrow.addEventListener('click', () => {
+    toggleArrow.classList.toggle('active');
+    // courseworkDropdown.classList.toggle('active');
+    courseworkDrop.forEach((it) => {
+        it.classList.toggle('active');
+    });
+
+});
