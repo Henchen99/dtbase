@@ -669,6 +669,57 @@ hr {
 
 
 
+/******** NOTES PAGES *********/
+.notes-content-wrapper{
+    margin: 0 auto;
+}
+
+.notes-content-header {
+    width: calc(0.5 * var(--max-width));
+    margin: auto;
+    text-align: center;
+    background-image: url(images/matnote1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid white;
+}
+
+
+.notes-content-subheader {
+    text-align: center;
+}
+
+.notes-content{
+    width: calc(0.5 * var(--max-width));
+    margin: auto;
+}
+
+table, th, td{
+    /* border: 2px solid black; */
+    margin: auto;
+    width: calc(0.5 * var(--max-width));
+    font-size: large;
+    border-radius: 5px;
+}
+
+.notes-table-header{
+    background-color: #d9d8d8;
+}
+
+.notes-table-data-pro{
+    background-color: greenyellow;
+    text-align: left;
+}
+
+.notes-table-data-con{
+    background-color: rgba(255, 0, 0, 0.712);
+    text-align: left;
+}
+
+
+
+
 @media only screen and (max-width: 1000px) { /*At 1000px and below, what we provide goes wierd, put into column*/
     .provideindex {
         /* display: flex; */
@@ -1037,52 +1088,3 @@ hr {
     }
 }
 
-
-
-/******** NOTES PAGES *********/
-.notes-content-wrapper{
-    margin: 0 auto;
-}
-
-.notes-content-header {
-    width: calc(0.5 * var(--max-width));
-    margin: auto;
-    text-align: center;
-    background-image: url(images/matnote1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 2px solid white;
-}
-
-
-.notes-content-subheader {
-    text-align: center;
-}
-
-.notes-content{
-    width: calc(0.5 * var(--max-width));
-    margin: auto;
-}
-
-table, th, td{
-    /* border: 2px solid black; */
-    margin: auto;
-    width: calc(0.5 * var(--max-width));
-    font-size: large;
-    border-radius: 5px;
-}
-
-.notes-table-header{
-    background-color: #d9d8d8;
-}
-
-.notes-table-data-pro{
-    background-color: greenyellow;
-    text-align: left;
-}
-
-.notes-table-data-con{
-    background-color: rgba(255, 0, 0, 0.712);
-    text-align: left;
-}
