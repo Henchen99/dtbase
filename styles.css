@@ -4,6 +4,7 @@ body {
     font-family: "Lato", sans-serif;
     max-width: 1200px;
     margin: auto;
+    --max-width: 1200px;
     /* background-color: rgb(245,245,245); */
 }
 
@@ -56,26 +57,6 @@ body {
 .nav-link-wrapper a:hover{
     color: rgb(185, 22, 22);
 }
-
-/* .hamburger {
-    position: absolute;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-} 
-
-.bar{
-    display: block;
-    width: 100%;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3 ease-in-out;
-    border-radius: 10px;
-    background-color: rgb(214, 214, 23);
-} */
 
 .hamburger {
     position: absolute;
@@ -357,6 +338,56 @@ body {
     color: rgb(0, 204, 255);
 }
 
+.search-container{
+    width: 100%;
+    height: 8vh;
+    /* display: flex; */
+}
+
+.search-form {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+}
+
+.search-form-flex {
+    width: 100%;
+    align-items: center;
+    padding: -20px;
+}
+
+.search-form .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size:x-large;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.search-input[type=text] {
+    color: rgb(108,117,126);
+    width: 70%;
+    /* align-items: center; */
+}
+
+.search-form .search-button {
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    padding: 10px 8vw;
+    background-color: rgb(185, 22, 22);
+    color: rgb(198, 198, 27);
+    font-weight: bold;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.search-form .fa-search {
+    align-self: center;
+    padding: 10px 20px;
+    color: rgb(108,117,126);
+}
 
 /***************CONTACTS*************/
 
@@ -835,7 +866,61 @@ hr {
         width: 30px;
         transform: translateX(-20px) translateY(51px) rotate(45deg);
     }
+
+    .search-container{
+        width: 100%;
+        height: 15.5vh;
+        display:inline-block;
+        align-items: center;
+        justify-content: center;
+        float: none;
+    }
+    
+    .search-form {
+        width: 100%;
+        height: 10vh;
+        display: block;
+    }
+    
+    .search-form .search-input {
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size:x-large;
+        font-weight: bold;
+        /* padding-left: 20px; */
+    }
+    
+    .search-input[type=text] {
+        color: rgb(108,117,126);
+        display: flex;
+        width: 10%;
+    }
+    
+    .search-form .search-button {
+        border: none;
+        outline: none;
+        display: block;
+        letter-spacing: 1px;
+        width: 100%;
+        background-color: rgb(185, 22, 22);
+        color: rgb(198, 198, 27);
+        font-weight: bold;
+        font-size: x-large;
+        cursor: pointer;
+    }
+    
+    .search-form .fa-search {
+        align-self: center;
+        /* padding: 10px 20px; */
+        color: rgb(108,117,126);
+    }
+
+    .search-form-flex {
+        display: flex;
+    }
 }
+
 
 @media only screen and (max-width: 530px) {
     
@@ -950,4 +1035,54 @@ hr {
         width: 30px;
         transform: translateX(-20px) translateY(64px) rotate(45deg);
     }
+}
+
+
+
+/******** NOTES PAGES *********/
+.notes-content-wrapper{
+    margin: 0 auto;
+}
+
+.notes-content-header {
+    width: calc(0.5 * var(--max-width));
+    margin: auto;
+    text-align: center;
+    background-image: url(images/matnote1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid white;
+}
+
+
+.notes-content-subheader {
+    text-align: center;
+}
+
+.notes-content{
+    width: calc(0.5 * var(--max-width));
+    margin: auto;
+}
+
+table, th, td{
+    /* border: 2px solid black; */
+    margin: auto;
+    width: calc(0.5 * var(--max-width));
+    font-size: large;
+    border-radius: 5px;
+}
+
+.notes-table-header{
+    background-color: #d9d8d8;
+}
+
+.notes-table-data-pro{
+    background-color: greenyellow;
+    text-align: left;
+}
+
+.notes-table-data-con{
+    background-color: rgba(255, 0, 0, 0.712);
+    text-align: left;
 }
