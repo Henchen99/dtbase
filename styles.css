@@ -685,6 +685,10 @@ hr {
     border: 2px solid white;
 }
 
+.notes-content-intro {
+    font-size: small;
+    
+}
 
 .notes-content-subheader {
     text-align: center;
@@ -970,6 +974,61 @@ table, th, td{
     .search-form-flex {
         display: flex;
     }
+
+    /*********** NOTES SMALLER ************/
+    .notes-content-wrapper{
+        margin: 0 auto;
+    }
+    
+    .notes-content-header {
+        width: calc(0.33 * var(--max-width));
+        margin: auto;
+        text-align: center;
+        background-image: url(images/matnote1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid white;
+    }
+    
+    .notes-content-intro {
+        font-size: small;
+        
+    }
+    
+    .notes-content-subheader {
+        text-align: center;
+    }
+    
+    .notes-content{
+        width: calc(0.32 * var(--max-width));
+        margin: auto;
+    }
+    
+    table, th, td{
+        /* border: 2px solid black; */
+        margin: auto;
+        width: calc(0.32 * var(--max-width));
+        font-size: medium;
+        border-radius: 5px;
+    }
+    
+    .notes-table-header{
+        background-color: #d9d8d8;
+    }
+    
+    .notes-table-data-pro{
+        background-color: greenyellow;
+        text-align: left;
+    }
+    
+    .notes-table-data-con{
+        background-color: rgba(255, 0, 0, 0.712);
+        text-align: left;
+    }
+    
+
+
 }
 
 
