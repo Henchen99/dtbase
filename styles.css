@@ -721,6 +721,25 @@ table, th, td{
     text-align: left;
 }
 
+.notes-table-header-maths{
+    background-color: rgba(74, 223, 249, 0.779);
+}
+
+.notes-table-math-one{
+    text-align: center;
+}
+
+.worked-example{
+    text-align: center;
+}
+
+.notes-table-odd{
+    background-color: rgba(38, 254, 254, 0.413);
+}
+
+.notes-table-even{
+    background-color: rgba(214, 217, 210, 0.811);
+}
 
 
 
@@ -1027,7 +1046,6 @@ table, th, td{
         text-align: left;
     }
     
-
 
 }
 
