@@ -678,7 +678,7 @@ hr {
     width: calc(0.5 * var(--max-width));
     margin: auto;
     text-align: center;
-    background-image: url(images/matnote1.jpg);
+    /* background-image: url(images/matnote1.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
