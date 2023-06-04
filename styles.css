@@ -699,6 +699,11 @@ hr {
     margin: auto;
 }
 
+.notes-content-picture {
+    transform: scale(0.8);
+    margin: auto;
+}
+
 table, th, td{
     /* border: 2px solid black; */
     margin: auto;
