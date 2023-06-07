@@ -675,7 +675,7 @@ hr {
 }
 
 .notes-content-header {
-    width: calc(0.5 * var(--max-width));
+    width: calc(0.6 * var(--max-width));
     margin: auto;
     text-align: center;
     /* background-image: url(images/matnote1.jpg); */
@@ -695,13 +695,16 @@ hr {
 }
 
 .notes-content{
-    width: calc(0.5 * var(--max-width));
+    width: calc(0.6 * var(--max-width));
     margin: auto;
 }
 
 .notes-content-picture {
     transform: scale(0.8);
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 table, th, td{
