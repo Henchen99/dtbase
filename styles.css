@@ -798,6 +798,17 @@ table, th, td{
     } 
 }
 
+@media only screen and (max-width: 730px) { 
+    .notes-content-header {
+        width: calc(0.5 * var(--max-width));
+        margin: auto;
+        text-align: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid white;
+    }
+}
 
 
 @media only screen and (max-width: 650px) { /*Nav bar squishes, need to collapse*/
@@ -1011,7 +1022,6 @@ table, th, td{
         width: calc(0.33 * var(--max-width));
         margin: auto;
         text-align: center;
-        background-image: url(images/matnote1.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
