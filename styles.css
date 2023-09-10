@@ -152,11 +152,7 @@ body {
 /******** ABOUT TUTORING *******/
 
 .about-description {
-    /*box-sizing: content-box;*/
-    /*box-shadow: 2px 2px #c2c0c0;*/
-    /*border-radius: 5px;*/
     position: relative;
-    /*display: flex;*/
 }
 
 .about-text {
@@ -179,19 +175,8 @@ body {
     max-width: 800px;
     text-align: center;
     padding: 10px;
-    /* margin-left: 10%;
-    margin-right: 10%; */
-    /* border:2px solid rgb(185, 22, 22); */
     position: relative;
 }
-
-
-/*.about-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
-    margin: auto;
-}*/
 
 
 .tutor_btn {
@@ -254,15 +239,50 @@ body {
     color:rgb(185, 22, 22)
 }
 
+.testimony_wrapper {
+    position: relative;
+    margin-left: 10%;
+    /* background-color: rgb(238,238,238); */
+    margin-right: 10%;
+}
+
+.testi_comment_wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.testi_col {
+    flex: 1;
+    margin: 0 1%;
+    /* border: 2px solid rgb(185, 22, 22); */
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden; 
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .testi_words {
+    padding: 5px;
+    padding-bottom: 100px;
+ }
+
+.five_stars {
+    width: 150px;
+    height: 30px;
+}
+
+.star_and_name {
+    position: absolute;
+    bottom: 0;
+    margin-top: 80;
+}
+
 /****Notes styles******/
 
 .portfolio-items-wrapper-notes_single {
-    /*display: grid;
-    grid-template-columns: 200px;
-    align-items: center;
-    justify-items: center;*/
-    /*margin-left: 40%;
-    margin-right: 40%;*/
     display: grid;
     grid-template-columns: 1fr;
     /* display: flex;
@@ -272,12 +292,6 @@ body {
 }
 
 .portfolio-items-wrapper-notes {
-    /*display: grid;
-    grid-template-columns: 200px;
-    align-items: center;
-    justify-items: center;*/
-    /*margin-left: 40%;
-    margin-right: 40%;*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* display: flex;
@@ -460,6 +474,7 @@ textarea.contact-form-text{
     margin-left: 15%;
     margin-right: 15%;
     background-color: rgb(238,238,238);
+    border-radius: 10px;
 }
 
 .tutoring {
@@ -467,6 +482,7 @@ textarea.contact-form-text{
     padding: 10px;
     margin-left: 20%;
     margin-right: 20%;
+    border-radius: 10px;
     background-color: rgb(238,238,238);
 }
 
@@ -515,6 +531,7 @@ hr {
     display: flex;
     background-color: rgb(238,238,238);
     height: 150px;
+    border-radius: 10px;
 }
 
 .provideindex_text {
@@ -533,6 +550,7 @@ hr {
     /* border: 2px solid rgb(185, 22, 22); */
     margin-right: 10px;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 .exercise_pic {
@@ -541,6 +559,7 @@ hr {
     float: left;
     margin-right: 10px;
     margin-bottom: 10px;
+    border-radius: 10px;
 } 
 
 .Coursework_pic {
@@ -549,6 +568,7 @@ hr {
     float: right;
     /* margin-right: 10px; */
     margin-bottom: 10px;
+    border-radius: 10px;
 } 
 
 
@@ -1063,7 +1083,30 @@ table, th, td{
         background-color: rgba(255, 0, 0, 0.712);
         text-align: left;
     }
+
+    .testi_comment_wrapper {
+        flex-direction: column; 
+      }
+
+    .testi_col {
+        margin: 1%;
+        position: relative;
+      }
     
+    .testi_words {
+        padding: 5px;
+        padding-bottom: 100px;
+     }
+    
+    .five_stars {
+        width: 100px;
+        height: 20px;
+    }
+    
+    .star_and_name {
+        position: absolute;
+        bottom: 0;
+    }
 
 }
 
