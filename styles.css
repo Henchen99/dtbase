@@ -742,12 +742,12 @@ table, th, td{
 }
 
 .notes-table-data-pro{
-    background-color: greenyellow;
+    background-color: rgb(173, 255, 47, 0.5);
     text-align: left;
 }
 
 .notes-table-data-con{
-    background-color: rgba(255, 0, 0, 0.712);
+    background-color: rgba(255, 0, 0, 0.5);
     text-align: left;
 }
 
