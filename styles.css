@@ -16,7 +16,7 @@ body {
 /* NAV STYLES */
 .Logo {
     /* background-color: rgb(173, 173, 173); */
-    background-color: rgb(220,220,220);
+    background-color: rgba(141, 141, 142, 0.2);
 }
 
 .logo {
@@ -36,6 +36,7 @@ body {
     border-bottom: 2px solid rgb(185, 22, 22);
     border-top: 2px solid rgb(185, 22, 22);
     font-size: large;
+    background-color: rgba(175, 6, 6, 0.2); /* Set the background color */
 }
 
 .navigation > div {
@@ -48,7 +49,7 @@ body {
 }
 
 .nav-link-wrapper a {
-    color: rgb(214, 214, 23);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     transition: color 0.5s;
     font-weight: bold;
@@ -159,7 +160,7 @@ body {
     width: auto;
     text-align: center;
     /* border:2px solid rgb(185, 22, 22); */
-    background-color: rgb(238,238,238);
+    background-color: rgb(238, 238, 238);
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 50px;
