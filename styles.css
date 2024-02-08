@@ -75,7 +75,7 @@ body {
     height: 3px;
     width: 100%;
     margin: 5px auto;
-    background-color: rgb(214, 214, 23);
+    background-color: rgb(0, 0, 0);
     border-radius: 10px;
 }
 
@@ -190,7 +190,7 @@ body {
 
 .tutor_btn a {
     text-decoration: none;
-    color: rgb(198, 198, 27);
+    color: rgb(185, 22, 22);
     transition: color 0.5s;
     font-weight: bold;
 }
@@ -206,7 +206,7 @@ body {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
-    background: rgb(226, 226, 31);
+    background: rgb(175, 6, 6, 0.2);
     text-align: center;
     cursor: pointer;  
     font-weight: bold;
@@ -217,11 +217,11 @@ body {
 .contactmebtn a {
     text-decoration: none;
     transition: color 0.5s;
-    color:rgb(185, 22, 22);
+    color:rgb(0, 0, 0);
 }
 
 .contactmebtn a:hover{
-    color: rgb(0, 204, 255);
+    color: rgb(255, 0, 0, 0.5);
     /* rgb(0, 204, 255); */
 }
 
