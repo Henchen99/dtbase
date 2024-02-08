@@ -441,13 +441,14 @@ textarea.contact-form-text{
 
 .contact-form-btn{
     float: right;
-    color:rgb(226, 226, 31);
-    background-color: rgb(185, 22, 22);
+    color:rgb(0, 0, 0);
+    background-color: rgb(175, 6, 6, 0.2);
     padding: 12px 40px;
     cursor: pointer;
     border: 0;
     border-radius: 5px;
     font-weight: bold;
+
 
     /* max-width: 135px;
     margin: auto;
@@ -505,7 +506,7 @@ hr {
     }
 
     .provideindex {
-        --h3-color: rgb(198, 198, 27);
+        --h3-color: rgb(0,0,0);
     }
 
 :root {
