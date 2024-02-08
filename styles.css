@@ -163,8 +163,8 @@ body {
     background-color: rgb(238, 238, 238);
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 7%;
@@ -252,6 +252,7 @@ body {
     display: flex;
     width: 100%;
 }
+
 
 .testi_col {
     flex: 1;
@@ -468,7 +469,7 @@ textarea.contact-form-text{
 .index-description {
     text-align: center;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
 }
 
 .website-introduction {
@@ -491,6 +492,7 @@ textarea.contact-form-text{
 
 hr {
     border-top: 2px solid rgb(185, 22, 22);
+    
 }
 
 
