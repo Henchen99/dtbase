@@ -25,15 +25,77 @@ toggleButton.addEventListener('click', () => {
 
 });
 
-const toggleArrow = document.getElementsByClassName('drop_down')[0];
-const courseworkDropdown = document.getElementsByClassName('Coursework_dropdown')[0];
-const courseworkDrop = document.querySelectorAll('.portfolio-item-wrapper-notes-coursework');
+// const toggleArrow = document.getElementsByClassName('drop_down')[0];
+// const courseworkDrop = document.querySelectorAll('.portfolio-item-wrapper-notes-coursework');
 
-toggleArrow.addEventListener('click', () => {
-    toggleArrow.classList.toggle('active');
-    // courseworkDropdown.classList.toggle('active');
-    courseworkDrop.forEach((it) => {
-        it.classList.toggle('active');
+// toggleArrow.addEventListener('click', () => {
+//     console.log("Clicked");
+//     toggleArrow.classList.toggle('active');
+//     courseworkDrop.forEach((it) => {
+//         it.classList.toggle('active');
+//     });
+// });
+
+// const toggleArrow_pastpaper = document.getElementsByClassName('drop_down_pp')[0];
+// const pastpaperDrop = document.querySelectorAll('.portfolio-item-wrapper-notes-pastpaper');
+
+// toggleArrow_pastpaper.addEventListener('click', () => {
+//     console.log("Clicked");
+//     toggleArrow_pastpaper.classList.toggle('active');
+//     pastpaperDrop.forEach((it) => {
+//         it.classList.toggle('active');
+//     });
+// });
+
+
+// const toggleArrowsPastpaper = document.querySelectorAll('.drop_down_pp');
+// const pastpaperDrops = document.querySelectorAll('.portfolio-item-wrapper-notes-pastpaper');
+
+// toggleArrowsPastpaper.forEach((toggleArrow_pastpaper) => {
+//     toggleArrow_pastpaper.addEventListener('click', () => {
+//         console.log("Clicked");
+//         toggleArrow_pastpaper.classList.toggle('active');
+//         pastpaperDrops.forEach((it) => {
+//             it.classList.toggle('active');
+//         });
+//     });
+// });
+
+// const toggleArrows = document.querySelectorAll('.drop_down');
+// const courseworkDrops = document.querySelectorAll('.portfolio-item-wrapper-notes-coursework');
+
+// toggleArrows.forEach((toggleArrow) => {
+//     toggleArrow.addEventListener('click', () => {
+//         console.log("Clicked");
+//         toggleArrow.classList.toggle('active');
+//         courseworkDrops.forEach((it) => {
+//             it.classList.toggle('active');
+//         });
+//     });
+// });
+
+const toggleArrowsPastpaper = document.querySelectorAll('.drop_down_pp');
+
+toggleArrowsPastpaper.forEach((toggleArrow_pastpaper) => {
+    toggleArrow_pastpaper.addEventListener('click', () => {
+        console.log("Clicked");
+        toggleArrow_pastpaper.classList.toggle('active');
+        const pastpaperDrops = toggleArrow_pastpaper.closest('.pastpaper_dropdown').querySelectorAll('.portfolio-item-wrapper-notes-pastpaper');
+        pastpaperDrops.forEach((it) => {
+            it.classList.toggle('active');
+        });
     });
+});
 
+const toggleArrows = document.querySelectorAll('.drop_down');
+
+toggleArrows.forEach((toggleArrow) => {
+    toggleArrow.addEventListener('click', () => {
+        console.log("Clicked");
+        toggleArrow.classList.toggle('active');
+        const courseworkDrops = toggleArrow.closest('.coursework_dropdown').querySelectorAll('.portfolio-item-wrapper-notes-coursework');
+        courseworkDrops.forEach((it) => {
+            it.classList.toggle('active');
+        });
+    });
 });

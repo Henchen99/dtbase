@@ -329,6 +329,17 @@ body {
     /* border-bottom: 2px solid rgb(185, 22, 22); */
 }
 
+.portfolio-img-background-pastpaper {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.85;
+    height: 150px;
+    width: 100%;
+    background-color:rgb(220,220,220);
+    /* border-bottom: 2px solid rgb(185, 22, 22); */
+}
+
 .img-text-wrapper-notes {
     position: absolute;
     top: 50%;
@@ -576,40 +587,11 @@ hr {
     border-radius: 10px;
 } 
 
-/**********PASTPAPER***********/
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 6px 0;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
 /**********COURSEWORK***********/
 
 .coursework_dropdown{
     display: flex;
-    /* justify-content: space-between; */
     border-bottom: 2px solid rgb(185, 22, 22);
-    /* border-top: 2px solid rgb(185, 22, 22); */
     font-size: large;
     flex-direction: column;
     align-items: flex-start;
@@ -629,8 +611,6 @@ hr {
     font-size: large;
     font-weight: bold;
     font-family: "Lato", sans-serif;
-    /* border-bottom: 2px solid rgb(185, 22, 22); */
-    /* border: 2px solid rgb(185, 22, 22); */
 }
 
 .portfolio-item-wrapper-notes-coursework{
@@ -689,6 +669,116 @@ hr {
 .portfolio-item-wrapper-notes-coursework.active{
     display: flex;
 } 
+
+
+/**********PAST PAPERS***********/
+
+.pastpaper_dropdown{
+    display: flex;
+    border-bottom: 2px solid rgb(185, 22, 22);
+    font-size: large;
+    flex-direction: column;
+    align-items: flex-start;
+    display: grid;
+}
+
+.pastpaper-example-container{
+    display: grid;
+    grid-template-columns: 80% auto;
+}
+
+.pastpaper-quote{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    background-color: whitesmoke;
+    font-size: large;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+}
+
+.portfolio-item-wrapper-notes-pastpaper{
+    position: relative;
+}
+
+.drop_down_pp {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70px;
+    height: 99%;
+    display: inline-block;
+    width: 100%;
+    background-color: whitesmoke;
+    /* border-bottom: 2px solid rgb(185, 22, 22); */
+}
+
+.drop_down_pp .bar {
+    display: block;
+    height: 3px;
+    width: 100%;
+    margin: 5px auto;
+    background-color: rgb(214, 214, 23);
+    border-radius: 10px;
+    position: relative;
+}
+
+.drop_down_pp .bar:nth-child(1){
+    width: 30px;
+    transform: translateY(32px) rotate(45deg);
+}
+
+.drop_down_pp .bar:nth-child(2){
+    width: 30px;
+    transform: translateY(44px) rotate(-45deg);
+}
+
+.drop_down_pp.active .bar:nth-child(1){
+    width: 30px;
+    transform: translateY(45px) rotate(-45deg);
+}
+
+.drop_down_pp.active .bar:nth-child(2){
+    width: 30px;
+    transform: translateX(-20px) translateY(38px) rotate(45deg);
+}
+
+.portfolio-item-wrapper-notes-pastpaper{
+    display: none;
+    width: 100%;
+    text-align: center;
+    /* padding-top: 10px; */
+    flex-direction: column;
+}
+
+.portfolio-item-wrapper-notes-pastpaper.active{
+    display: flex;
+} 
+/* 
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 6px 0;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+} */
 
 /************ FOOTER *************/
 .footer {
