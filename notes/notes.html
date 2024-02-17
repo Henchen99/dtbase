@@ -76,10 +76,19 @@
                 </div>
                 
             </div>
+            
+
         </header>
         <div class="quote">
             <h2>Free handmade revision notes tailored for GCSE and A Level Design and Technology</h2>
         </div>
+
+        <!-- Search bar section -->
+        <div class="search-container" style = "background-color: whitesmoke;">
+            <input type="text" id="searchInput" placeholder="Search for topics...">
+            <button onclick="search()">Search</button>
+        </div>
+        <ul id="searchResults"></ul>
 
         <!-- <div class="search-container">
             <form class="search-form">
@@ -237,6 +246,12 @@
         </div>
 
     </div>
+
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+    </style>
 </body>
 <script src="../script.js"></script>
 </html>

@@ -99,3 +99,49 @@ toggleArrows.forEach((toggleArrow) => {
         });
     });
 });
+
+
+
+
+
+
+
+
+// Define your topics and their corresponding URLs
+const topics = [
+    { name: 'Woods', url: 'notes_topics/notes_pages/woods_materials_notes.html' },
+    // Add more topics as needed
+];
+
+// Function to perform search and redirect to the notes page if there's a match
+function search() {
+    const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
+
+    // Check if the search input matches any of the topics
+    const matchedTopic = topics.find(topic =>
+        topic.name.toLowerCase() === searchInput
+    );
+
+    if (matchedTopic) {
+        // Redirect to the matched topic's URL
+        window.location.href = matchedTopic.url;
+    } else {
+        // Handle case where no match is found (optional)
+        alert('No matching topic found.');
+    }
+}
+
+// Get the search input element
+const searchInput = document.getElementById('searchInput');
+
+// Add event listener for keydown event
+searchInput.addEventListener('keydown', function(event) {
+    // Check if the key pressed is Enter (key code 13)
+    if (event.keyCode === 13) {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+        
+        // Call the search function when Enter is pressed
+        search();
+    }
+});

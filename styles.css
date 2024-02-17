@@ -417,6 +417,74 @@ body {
     color: rgb(108,117,126);
 }
 
+/***************SEARCH BAR*************/
+
+.search-container {
+    display: flex;
+    justify-content: center; /* Center the search bar horizontally */
+    align-items: center;
+    margin-top: 1px; /* Adjust the top margin */
+    margin-bottom: 1px; /* Adjust the bottom margin */
+}
+
+#searchInput {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px; /* Rounded corners */
+    width: 300px; /* Adjust width as needed */
+    font-size: 16px;
+    outline: none; /* Remove focus outline */
+}
+
+#searchInput:focus {
+    border-color: rgb(185, 22, 22); /* Change border color on focus */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(185, 22, 22);
+    color: white;
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Adjust margin as needed */
+}
+
+button:hover {
+    background-color: rgb(185, 22, 22); /* Darker shade on hover */
+}
+
+.search-results {
+    position: absolute;
+    top: calc(100% + 10px); /* Place search results below the search bar */
+    left: 50%;
+    transform: translateX(-50%); /* Center search results horizontally */
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 300px; /* Adjust width as needed */
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add shadow effect */
+}
+
+/* Style the individual search result items */
+.search-results li {
+    padding: 2px 4px;
+    cursor: pointer;
+}
+
+.search-results li:hover {
+    background-color: #f4f4f4;
+}
+
+
+
 /***************CONTACTS*************/
 
 .contact-section{
