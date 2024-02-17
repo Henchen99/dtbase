@@ -248,6 +248,25 @@ const topics = [
     { name: 'High density modelling foam', url: 'notes_topics/notes_pages/modern_materials_notes.html' },
     { name: 'Polymorph', url: 'notes_topics/notes_pages/modern_materials_notes.html' },
     // Modern materials^^^
+    { name: 'Performance Characteristics Of Materials', url: 'notes_topics/notes_pages/performance_characteristics_of_materials_notes.html' },
+    { name: 'Physical characteristics', url: 'notes_topics/notes_pages/performance_characteristics_of_materials_notes.html' },
+    { name: 'Mechanical properties', url: 'notes_topics/notes_pages/performance_characteristics_of_materials_notes.html' },
+    { name: 'Physical properties', url: 'notes_topics/notes_pages/performance_characteristics_of_materials_notes.html' },
+    { name: 'Mechanical characteristics', url: 'notes_topics/notes_pages/performance_characteristics_of_materials_notes.html' },
+    { name: 'Electrical conductivity', url: 'notes_topics/notes_pages/performance_characteristics_of_materials_notes.html' },
+    { name: 'Thermal conductivity', url: 'notes_topics/notes_pages/performance_characteristics_of_materials_notes.html' },
+    { name: 'Biodegradability', url: 'notes_topics/notes_pages/performance_characteristics_of_materials_notes.html' },
+    { name: 'Chemical resistance', url: 'notes_topics/notes_pages/performance_characteristics_of_materials_notes.html' },
+    { name: 'Corrosion resistance', url: 'notes_topics/notes_pages/performance_characteristics_of_materials_notes.html' },
+    { name: 'Strength', url: 'notes_topics/notes_pages/performance_characteristics_of_materials_notes.html' },
+    { name: 'Elasticity', url: 'notes_topics/notes_pages/performance_characteristics_of_materials_notes.html' },
+    { name: 'Placticity', url: 'notes_topics/notes_pages/performance_characteristics_of_materials_notes.html' },
+    { name: 'Malleability', url: 'notes_topics/notes_pages/performance_characteristics_of_materials_notes.html' },
+    { name: 'Ductility', url: 'notes_topics/notes_pages/performance_characteristics_of_materials_notes.html' },
+    { name: 'Hardness', url: 'notes_topics/notes_pages/performance_characteristics_of_materials_notes.html' },
+    { name: 'Toughness', url: 'notes_topics/notes_pages/performance_characteristics_of_materials_notes.html' },
+    { name: 'Durability', url: 'notes_topics/notes_pages/performance_characteristics_of_materials_notes.html' },
+    // Section 2^^^
 
 ];
 
