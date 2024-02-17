@@ -267,6 +267,13 @@ const topics = [
     { name: 'Toughness', url: 'notes_topics/notes_pages/performance_characteristics_of_materials_notes.html' },
     { name: 'Durability', url: 'notes_topics/notes_pages/performance_characteristics_of_materials_notes.html' },
     // Section 2^^^
+    { name: 'Alloying', url: 'notes_topics/notes_pages/alloying_notes.html' },
+    { name: 'Alloys', url: 'notes_topics/notes_pages/alloying_notes.html' },
+    { name: 'Steel', url: 'notes_topics/notes_pages/alloying_notes.html' },
+    { name: 'Brass', url: 'notes_topics/notes_pages/alloying_notes.html' },
+    { name: 'Bronze', url: 'notes_topics/notes_pages/alloying_notes.html' },
+    { name: 'Duralumin', url: 'notes_topics/notes_pages/alloying_notes.html' },
+    // Alloying^^^
 
 ];
 
