@@ -274,7 +274,19 @@ const topics = [
     { name: 'Bronze', url: 'notes_topics/notes_pages/alloying_notes.html' },
     { name: 'Duralumin', url: 'notes_topics/notes_pages/alloying_notes.html' },
     // Alloying^^^
-
+    { name: 'Sand casting', url: 'notes_topics/notes_pages/casting_notes.html' },
+    { name: 'Casting', url: 'notes_topics/notes_pages/casting_notes.html' },
+    { name: 'Investment casting', url: 'notes_topics/notes_pages/casting_notes.html' },
+    { name: 'Die casting', url: 'notes_topics/notes_pages/casting_notes.html' },
+    { name: 'Resin casting', url: 'notes_topics/notes_pages/casting_notes.html' },
+    { name: 'Plaster of Paris casting', url: 'notes_topics/notes_pages/casting_notes.html' },
+    // Casting^^^
+    { name: 'Design decisions', url: 'notes_topics/notes_pages/design_decisions_notes.html' },
+    { name: 'Pictorial drawings', url: 'notes_topics/notes_pages/design_decisions_notes.html' },
+    { name: 'Working drawings', url: 'notes_topics/notes_pages/design_decisions_notes.html' },
+    { name: 'Nets', url: 'notes_topics/notes_pages/design_decisions_notes.html' },
+    { name: 'Translation', url: 'notes_topics/notes_pages/design_decisions_notes.html' },
+    { name: 'Report writing', url: 'notes_topics/notes_pages/design_decisions_notes.html' },
 ];
 
 // Function to perform search and redirect to the notes page if there's a match
