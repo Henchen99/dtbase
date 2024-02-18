@@ -419,22 +419,23 @@ body {
 
 /***************SEARCH BAR*************/
 
+/* Search bar styles */
 .search-container {
     display: flex;
     justify-content: center; /* Center the search bar horizontally */
     align-items: center;
-    margin-top: 1px; /* Adjust the top margin */
-    margin-bottom: 1px; /* Adjust the bottom margin */
+    margin-top: 10px; /* Adjust the top margin */
+    margin-bottom: 10px; /* Adjust the bottom margin */
 }
 
 #searchInput {
     padding: 10px;
     border: 2px solid #ccc;
-    border-radius: 0px; /* Rounded corners */
+    border-radius: 0; /* Rounded corners */
     width: 100%; /* Adjust width as needed */
     font-size: 20px;
-    margin-top: 1px; /* Adjust the top margin */
-    margin-bottom: 1px; /* Adjust the bottom margin */
+    margin-top: 10px; /* Adjust the top margin */
+    margin-bottom: 10px; /* Adjust the bottom margin */
     outline: none; /* Remove focus outline */
 }
 
@@ -447,26 +448,27 @@ button {
     background-color: rgb(185, 22, 22);
     color: white;
     border: none;
-    margin-top: 1px; /* Adjust the top margin */
-    margin-bottom: 1px; /* Adjust the bottom margin */
+    margin-top: 10px; /* Adjust the top margin */
+    margin-bottom: 10px; /* Adjust the bottom margin */
     font-size: 20px;
-    border-radius: 0px; /* Rounded corners */
+    border-radius: 0; /* Rounded corners */
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-left: 10px; /* Adjust margin as needed */
 }
 
 button:hover {
-    background-color: rgb(185, 22, 22); /* Darker shade on hover */
+    background-color: #a00; /* Darker shade on hover */
 }
 
+/* Search results styles */
 .search-results {
     position: absolute;
     top: calc(100% + 10px); /* Place search results below the search bar */
     left: 50%;
     transform: translateX(-50%); /* Center search results horizontally */
     z-index: 1;
-    background-color: #fff;
+    background-color: #000000;
     border: 1px solid #ccc;
     border-top: none;
     list-style-type: none;
@@ -475,20 +477,47 @@ button:hover {
     width: 300px; /* Adjust width as needed */
     max-height: 200px;
     overflow-y: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add shadow effect */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Add shadow effect */
 }
 
-/* Style the individual search result items */
+/* Individual search result items */
 .search-results li {
-    padding: 2px 4px;
+    padding: 8px 12px;
     cursor: pointer;
 }
 
 .search-results li:hover {
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Lighter shade on hover */
 }
 
+/* Style the individual search result items */
+.search-result-item {
+    cursor: pointer;
+    list-style: none; /* Remove bullet points */
+    font-weight: bold; /* Make search results bold */
+    color: black; /* Set default color */
+    padding: 5px; /* Add padding for better spacing */
+}
 
+.search-result-item:hover {
+    background-color: #ff9999; /* Light red color on hover */
+    color: white; /* Change text color to white on hover for better contrast */
+}
+
+.search-result-title {
+    color: #007bff; /* Blue color for links */
+    text-decoration: underline; /* Underline to resemble links */
+}
+
+.search-result-item {
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Apply hover effect to search result items */
+.search-results li:hover {
+    background-color: #ff0000; /* Lighter shade on hover */
+    cursor: pointer; /* Change cursor to indicate clickability */
+}
 
 /***************CONTACTS*************/
 

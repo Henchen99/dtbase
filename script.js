@@ -287,28 +287,183 @@ const topics = [
     { name: 'Nets', url: 'notes_topics/notes_pages/design_decisions_notes.html' },
     { name: 'Translation', url: 'notes_topics/notes_pages/design_decisions_notes.html' },
     { name: 'Report writing', url: 'notes_topics/notes_pages/design_decisions_notes.html' },
+    // Casting^^^
+    { name: "Finishes", url: "notes_topics/notes_pages/finishing_techniques_notes.html" },
+    { name: "Finishing techniques", url: "notes_topics/notes_pages/finishing_techniques_notes.html" },
+    { name: "Paper and Board Finishes", url: "notes_topics/notes_pages/finishing_techniques_notes.html" },
+    { name: "Paints", url: "notes_topics/notes_pages/finishing_techniques_notes.html" },
+    { name: "Varnishes", url: "notes_topics/notes_pages/finishing_techniques_notes.html" },
+    { name: "Sealant", url: "notes_topics/notes_pages/finishing_techniques_notes.html" },
+    { name: "Preservatives", url: "notes_topics/notes_pages/finishing_techniques_notes.html" },
+    { name: "Anodising", url: "notes_topics/notes_pages/finishing_techniques_notes.html" },
+    { name: "Electro-Plating", url: "notes_topics/notes_pages/finishing_techniques_notes.html" },
+    { name: "Powder Coating", url: "notes_topics/notes_pages/finishing_techniques_notes.html" },
+    { name: "Oil Coating", url: "notes_topics/notes_pages/finishing_techniques_notes.html" },
+    { name: "Galvanisation", url: "notes_topics/notes_pages/finishing_techniques_notes.html" },
+    { name: "Cathodic Protection", url: "notes_topics/notes_pages/finishing_techniques_notes.html" },
+    { name: "Paper Laminating", url: "notes_topics/notes_pages/finishing_techniques_notes.html" },
+    { name: "Varnishing", url: "notes_topics/notes_pages/finishing_techniques_notes.html" },
+    { name: "Hot Foil Blocking", url: "notes_topics/notes_pages/finishing_techniques_notes.html" },
+    { name: "Embossing", url: "notes_topics/notes_pages/finishing_techniques_notes.html" },
+    // Finishing techniques^^^
+    { name: "Hardening and Tempering", url: "notes_topics/notes_pages/heat_treatments_notes.html" },
+    { name: "Hardening", url: "notes_topics/notes_pages/heat_treatments_notes.html" },
+    { name: "Heat treatments", url: "notes_topics/notes_pages/heat_treatments_notes.html" },
+    { name: "Tempering", url: "notes_topics/notes_pages/heat_treatments_notes.html" },
+    { name: "Case Hardening", url: "notes_topics/notes_pages/heat_treatments_notes.html" },
+    { name: "Annealing", url: "notes_topics/notes_pages/heat_treatments_notes.html" },
+    { name: "Normalising", url: "notes_topics/notes_pages/heat_treatments_notes.html" },
+    // Heat treatments^^^
+    { name: "Adhesives", url: "notes_topics/notes_pages/joining_techniques_notes.html" },
+    { name: "Mechanical joining", url: "notes_topics/notes_pages/joining_techniques_notes.html" },
+    { name: "Heat", url: "notes_topics/notes_pages/joining_techniques_notes.html" },
+    { name: "Jointing", url: "notes_topics/notes_pages/joining_techniques_notes.html" },
+    { name: "Traditional Wood Joints", url: "notes_topics/notes_pages/joining_techniques_notes.html" },
+    { name: "Knock-down Fittings", url: "notes_topics/notes_pages/joining_techniques_notes.html" },
+    { name: "Wood Screws", url: "notes_topics/notes_pages/joining_techniques_notes.html" },
+    { name: "Coach Bolt", url: "notes_topics/notes_pages/joining_techniques_notes.html" },
+    { name: "Oxy Acetylene Welding", url: "notes_topics/notes_pages/joining_techniques_notes.html" },
+    { name: "MIG Welding", url: "notes_topics/notes_pages/joining_techniques_notes.html" },
+    { name: "Brazing", url: "notes_topics/notes_pages/joining_techniques_notes.html" },
+    { name: "Hard Soldering", url: "notes_topics/notes_pages/joining_techniques_notes.html" },
+    { name: "Soft Soldering", url: "notes_topics/notes_pages/joining_techniques_notes.html" },
+    { name: "Joining techniques", url: "notes_topics/notes_pages/joining_techniques_notes.html" },
+    // Joining techniques^^^
+    { name: "Lamination", url: "notes_topics/notes_pages/lamination_notes.html" },
+    { name: "Wood Lamination", url: "notes_topics/notes_pages/lamination_notes.html" },
+    // Wood lamination^^^
+    { name: "Vertical Milling", url: "notes_topics/notes_pages/machining_notes.html" },
+    { name: "Milling", url: "notes_topics/notes_pages/machining_notes.html" },
+    { name: "Horizontal Milling", url: "notes_topics/notes_pages/machining_notes.html" },
+    { name: "Routing", url: "notes_topics/notes_pages/machining_notes.html" },
+    { name: "Drilling", url: "notes_topics/notes_pages/machining_notes.html" },
+    { name: "Turning", url: "notes_topics/notes_pages/machining_notes.html" },
+    { name: "Stamping", url: "notes_topics/notes_pages/machining_notes.html" },
+    { name: "Pressing", url: "notes_topics/notes_pages/machining_notes.html" },
+    // Machining^^^
+    { name: "Marking out", url: "notes_topics/notes_pages/marking_out_techniques_notes.html" },
+    { name: "Marking out techniques", url: "notes_topics/notes_pages/marking_out_techniques_notes.html" },
+    // Marking out^^^
+    { name: "Blow Moulding", url: "notes_topics/notes_pages/moulding_notes.html" },
+    { name: "Moulding", url: "notes_topics/notes_pages/moulding_notes.html" },
+    { name: "Polymer Moulding", url: "notes_topics/notes_pages/moulding_notes.html" },
+    { name: "Injection Moulding", url: "notes_topics/notes_pages/moulding_notes.html" },
+    { name: "Vacuum Forming", url: "notes_topics/notes_pages/moulding_notes.html" },
+    { name: "Extrusion", url: "notes_topics/notes_pages/moulding_notes.html" },
+    { name: "Rotational Moulding", url: "notes_topics/notes_pages/moulding_notes.html" },
+    // Moulding^^^
+    { name: "Offset Lithography", url: "notes_topics/notes_pages/printing_notes.html" },
+    { name: "Printing", url: "notes_topics/notes_pages/printing_notes.html" },
+    { name: "Flexography", url: "notes_topics/notes_pages/printing_notes.html" },
+    { name: "Printing methods", url: "notes_topics/notes_pages/printing_notes.html" },
+    { name: "Screen Printing", url: "notes_topics/notes_pages/printing_notes.html" },
+    { name: "Gravure Printing", url: "notes_topics/notes_pages/printing_notes.html" },
+    // Printing^^^
+    { name: "Mortise Gauge", url: "notes_topics/notes_pages/specialist_marking_tools_notes.html" },
+    { name: "Odd Leg Calipers", url: "notes_topics/notes_pages/specialist_marking_tools_notes.html" },
+    { name: "Internal Calipers", url: "notes_topics/notes_pages/specialist_marking_tools_notes.html" },
+    { name: "External Calipers", url: "notes_topics/notes_pages/specialist_marking_tools_notes.html" },
+    { name: "Try-Square", url: "notes_topics/notes_pages/specialist_marking_tools_notes.html" },
+    { name: "Engineering Square", url: "notes_topics/notes_pages/specialist_marking_tools_notes.html" },
+    { name: "Micrometer", url: "notes_topics/notes_pages/specialist_marking_tools_notes.html" },
+    { name: "Vernier Calipers", url: "notes_topics/notes_pages/specialist_marking_tools_notes.html" },
+    { name: "Densitometer", url: "notes_topics/notes_pages/specialist_marking_tools_notes.html" },
+    { name: "Dividers", url: "notes_topics/notes_pages/specialist_marking_tools_notes.html" },
+    { name: "Jigs", url: "notes_topics/notes_pages/specialist_marking_tools_notes.html" },
+    { name: "Fixtures", url: "notes_topics/notes_pages/specialist_marking_tools_notes.html" },
+    { name: "Go-No-Go Gauge", url: "notes_topics/notes_pages/specialist_marking_tools_notes.html" },
+    // Marking tools^^^
+    { name: "CAD software", url: "notes_topics/notes_pages/CAD_notes.html" },
+    { name: "CAD", url: "notes_topics/notes_pages/CAD_notes.html" },
+    { name: "3D modelling", url: "notes_topics/notes_pages/CAD_notes.html" },
+    { name: "Wire frame models", url: "notes_topics/notes_pages/CAD_notes.html" },
+    { name: "Surface modelling", url: "notes_topics/notes_pages/CAD_notes.html" },
+    { name: "Finite Element Analysis", url: "notes_topics/notes_pages/CAD_notes.html" },
+    { name: "FEA", url: "notes_topics/notes_pages/CAD_notes.html" },
+    { name: "CFD", url: "notes_topics/notes_pages/CAD_notes.html" },
+    { name: "Computational fluid dynamics", url: "notes_topics/notes_pages/CAD_notes.html" },
+    //CAD^^^
+    { name: "CAM software", url: "notes_topics/notes_pages/CAM_notes.html" },
+    { name: "CAM", url: "notes_topics/notes_pages/CAM_notes.html" },
+    { name: "CNC", url: "notes_topics/notes_pages/CAM_notes.html" },
+    { name: "CAM machines", url: "notes_topics/notes_pages/CAM_notes.html" },
+    { name: "CNC machines", url: "notes_topics/notes_pages/CAM_notes.html" },
+    { name: "Rapid prototyping (3D printing)", url: "notes_topics/notes_pages/CAM_notes.html" },
+    //CAM^^^
+    { name: "User values", url: "notes_topics/notes_pages/user_centred_design_notes.html" },
+    { name: "User needs", url: "notes_topics/notes_pages/user_centred_design_notes.html" },
+    { name: "User wants", url: "notes_topics/notes_pages/user_centred_design_notes.html" },
+    { name: "Purpose", url: "notes_topics/notes_pages/user_centred_design_notes.html" },
+    { name: "Functionality", url: "notes_topics/notes_pages/user_centred_design_notes.html" },
+    { name: "Innovation", url: "notes_topics/notes_pages/user_centred_design_notes.html" },
+    { name: "Authenticity", url: "notes_topics/notes_pages/user_centred_design_notes.html" },
+    { name: "User centred design", url: "notes_topics/notes_pages/user_centred_design_notes.html" },
+    //User centred design^^^
+    { name: "Sources and applications of anthropometric data", url: "notes_topics/notes_pages/Influence_of_design_anthropometrics_notes.html" },
+    { name: "Ergonomic factors for a designer to consider", url: "notes_topics/notes_pages/Influence_of_design_anthropometrics_notes.html" },
+    { name: "Ergonomics", url: "notes_topics/notes_pages/Influence_of_design_anthropometrics_notes.html" },
+    { name: "Anthropometrics", url: "notes_topics/notes_pages/Influence_of_design_anthropometrics_notes.html" },
+    { name: "Qualitative", url: "notes_topics/notes_pages/Influence_of_design_anthropometrics_notes.html" },
+    { name: "Quantitative", url: "notes_topics/notes_pages/Influence_of_design_anthropometrics_notes.html" },
+    { name: "Anthropometric data", url: "notes_topics/notes_pages/Influence_of_design_anthropometrics_notes.html" },
+    { name: "5th percentile", url: "notes_topics/notes_pages/Influence_of_design_anthropometrics_notes.html" },
+    { name: "95th percentile", url: "notes_topics/notes_pages/Influence_of_design_anthropometrics_notes.html" },
+    { name: "Percentiles", url: "notes_topics/notes_pages/Influence_of_design_anthropometrics_notes.html" },
+    //Ergo& Anthro^^^
+    { name: "Form over function", url: "notes_topics/notes_pages/influence_of_aesthetics_notes.html" },
+    { name: "Form follows function", url: "notes_topics/notes_pages/influence_of_aesthetics_notes.html" },
+    { name: "Form", url: "notes_topics/notes_pages/influence_of_aesthetics_notes.html" },
+    { name: "Function", url: "notes_topics/notes_pages/influence_of_aesthetics_notes.html" },
+    //Form and function^^^
+    { name: "Arts & Crafts", url: "notes_pages/design_influences_methods_and_figures_factors_influencing_the_development_of_products_notes.html" },
+    { name: "Art Nouveau", url: "notes_pages/design_influences_methods_and_figures_factors_influencing_the_development_of_products_notes.html" },
+    { name: "Bauhaus Modernist", url: "notes_pages/design_influences_methods_and_figures_factors_influencing_the_development_of_products_notes.html" },
+    { name: "Art Deco", url: "notes_pages/design_influences_methods_and_figures_factors_influencing_the_development_of_products_notes.html" },
+    { name: "Post Modernism", url: "notes_pages/design_influences_methods_and_figures_factors_influencing_the_development_of_products_notes.html" },
+    { name: "Streamlining", url: "notes_pages/design_influences_methods_and_figures_factors_influencing_the_development_of_products_notes.html" },
+    { name: "Memphis", url: "notes_pages/design_influences_methods_and_figures_factors_influencing_the_development_of_products_notes.html" },
+    { name: "William Morris", url: "notes_pages/design_influences_methods_and_figures_factors_influencing_the_development_of_products_notes.html" },
+    { name: "Charles Rennie Mackintosh", url: "notes_pages/design_influences_methods_and_figures_factors_influencing_the_development_of_products_notes.html" },
+    { name: "Marianna Brandt", url: "notes_pages/design_influences_methods_and_figures_factors_influencing_the_development_of_products_notes.html" },
+    { name: "Eileen Gray", url: "notes_pages/design_influences_methods_and_figures_factors_influencing_the_development_of_products_notes.html" },
+    { name: "Philippe Starck", url: "notes_pages/design_influences_methods_and_figures_factors_influencing_the_development_of_products_notes.html" },
+    { name: "Raymond Lowey", url: "notes_pages/design_influences_methods_and_figures_factors_influencing_the_development_of_products_notes.html" },
+    { name: "Ettore Scotsass", url: "notes_pages/design_influences_methods_and_figures_factors_influencing_the_development_of_products_notes.html" },
+    //Design theory^^^
+    { name: "Consumer society", url: "notes_topics/notes_pages/technological_developments_notes.html" },
+    { name: "Built in obsolescence", url: "notes_topics/notes_pages/technological_developments_notes.html" },
+    { name: "Computers in the development and manufacture of products", url: "notes_topics/notes_pages/technological_developments_notes.html" },
+    { name: "CIM systems", url: "notes_topics/notes_pages/technological_developments_notes.html" },
+    { name: "Computer-to-plate technology", url: "notes_topics/notes_pages/technological_developments_notes.html" },
+    { name: "Miniturisation of products and components", url: "notes_topics/notes_pages/technological_developments_notes.html" },
+    { name: "Advanced integrated circuits", url: "notes_topics/notes_pages/technological_developments_notes.html" },
+    { name: "Advanced battery technology", url: "notes_topics/notes_pages/technological_developments_notes.html" },
+    { name: "Advanced liquid crystal displays", url: "notes_topics/notes_pages/technological_developments_notes.html" },
+    { name: "Smart materials and products for innovative applications", url: "notes_topics/notes_pages/technological_developments_notes.html" },
+    { name: "Global marketplace", url: "notes_topics/notes_pages/technological_developments_notes.html" },
+    { name: "Offshore manufacturing", url: "notes_topics/notes_pages/technological_developments_notes.html" },
+    { name: "Multinational companies", url: "notes_topics/notes_pages/technological_developments_notes.html" },
+    { name: "Outsourcing", url: "notes_topics/notes_pages/technological_developments_notes.html" },
+    { name: "Mass production (effects of technological developments)", url: "notes_topics/notes_pages/technological_developments_notes.html" },
+    //Tech dev^^^
+    { name: "Safe working practice", url: "notes_topics/notes_pages/safe_working_notes.html" },
+    { name: "Understanding the need for risk assessments", url: "notes_topics/notes_pages/safe_working_notes.html" },
+    { name: "Training", url: "notes_topics/notes_pages/safe_working_notes.html" },
+    { name: "Machine maintenance and guarding", url: "notes_topics/notes_pages/safe_working_notes.html" },
+    { name: "Extraction systems", url: "notes_topics/notes_pages/safe_working_notes.html" },
+    { name: "Provision of PPE", url: "notes_topics/notes_pages/safe_working_notes.html" },
+    { name: "General safe working practices", url: "notes_topics/notes_pages/safe_working_notes.html" },
+    { name: "Health and Safety Executive", url: "notes_topics/notes_pages/safe_working_notes.html" },
+    { name: "HSE", url: "notes_topics/notes_pages/safe_working_notes.html" },
+    { name: "Identification of potential hazards", url: "notes_topics/notes_pages/safe_working_notes.html" },
+    { name: "Identifying the people at risk", url: "notes_topics/notes_pages/safe_working_notes.html" },
+    { name: "Evaluation of risk", url: "notes_topics/notes_pages/safe_working_notes.html" },
+    { name: "Risk assessments", url: "notes_topics/notes_pages/safe_working_notes.html" },
+    { name: "Implement control methods", url: "notes_topics/notes_pages/safe_working_notes.html" },
+    { name: "Recording and storing of risk assessment documentation", url: "notes_topics/notes_pages/safe_working_notes.html" }
+
+
 ];
-
-// Function to perform search and redirect to the notes page if there's a match
-function search() {
-    const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
-
-    // Check if the search input matches any of the topics
-    const matchedTopic = topics.find(topic =>
-        topic.name.toLowerCase() === searchInput
-    );
-
-    if (matchedTopic) {
-        // Redirect to the matched topic's URL
-        window.location.href = matchedTopic.url;
-    } else {
-        // Handle case where no match is found (optional)
-        alert('No matching topic found.');
-    }
-}
-
-// Get the search input element
-const searchInput = document.getElementById('searchInput');
 
 // Add event listener for keydown event
 searchInput.addEventListener('keydown', function(event) {
@@ -319,5 +474,40 @@ searchInput.addEventListener('keydown', function(event) {
         
         // Call the search function when Enter is pressed
         search();
+    }
+});
+
+// Function to perform search and display multiple matches for selection
+function search() {
+    const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
+
+    // Check if the search input matches any of the topics
+    const matchedTopics = topics.filter(topic =>
+        topic.name.toLowerCase().includes(searchInput)
+    );
+
+    const resultsContainer = document.getElementById('searchResults');
+    resultsContainer.innerHTML = ''; // Clear previous search results
+
+    if (matchedTopics.length > 0) {
+        // Display the matched topics for selection
+        matchedTopics.forEach(topic => {
+            const resultItem = document.createElement('li');
+            resultItem.textContent = topic.name;
+            resultItem.classList.add('search-result-item');
+            resultItem.dataset.url = topic.url; // Store URL as data attribute
+            resultsContainer.appendChild(resultItem);
+        });
+    } else {
+        // Handle case where no match is found
+        resultsContainer.innerHTML = '<li>No matching topic found.</li>';
+    }
+}
+
+// Add event listener to handle click on search result items
+document.getElementById('searchResults').addEventListener('click', function(event) {
+    const clickedItem = event.target;
+    if (clickedItem.classList.contains('search-result-item')) {
+        window.location.href = clickedItem.dataset.url;
     }
 });
