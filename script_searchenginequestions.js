@@ -453,9 +453,11 @@ function search() {
     }
 
     // Check if the search input matches any of the questions
-    const matchedQuestions = questions.filter(question =>
-        question.question.toLowerCase().includes(searchInput)
-    );
+    const matchedQuestions = questions
+        .filter(question =>
+            question.question.toLowerCase().includes(searchInput)
+        )
+        .slice(0, 10); // Limit to the first 10 matched questions
 
     const resultsContainer = document.getElementById('searchResults');
     resultsContainer.innerHTML = ''; // Clear previous search results
