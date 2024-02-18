@@ -510,24 +510,110 @@ const topics = [
     { name: "Repair and maintenance", url: "notes_topics/notes_pages/product_life_cycle_notes.html" },
     { name: "End of life", url: "notes_topics/notes_pages/product_life_cycle_notes.html" },
     { name: "Product Life Cycle", url: "notes_topics/notes_pages/product_life_cycle_notes.html" },
+    //Product Life Cycle
+    { name: "Cost implications to the consumer and manufacturer", url: "notes_topics/notes_pages/wider_issues_tech_notes.html" },
+    { name: "Sustainability", url: "notes_topics/notes_pages/wider_issues_tech_notes.html" },
+    { name: "Wider issues of using cleaner technologies", url: "notes_topics/notes_pages/wider_issues_tech_notes.html" },
+    //Wider issues of using cleaner tech
+    { name: "Consumer Rights Act (2015)", url: "notes_topics/notes_pages/consumer_rights_notes.html" },
+    { name: "Sale of Goods Act (1979)", url: "notes_topics/notes_pages/consumer_rights_notes.html" },
+    { name: "Consumer Rights Legislation", url: "notes_topics/notes_pages/consumer_rights_notes.html" },
+    //Consumer rights^^^
+    { name: "Health and Safety at Work Act (1974)", url: "notes_topics/notes_pages/health_and_safety_laws_notes.html" },
+    { name: "Health and Safety", url: "notes_topics/notes_pages/health_and_safety_laws_notes.html" },
+    { name: "Control of Substances Hazardous to Health (COSHH) Regulation", url: "notes_topics/notes_pages/health_and_safety_laws_notes.html" },
+    //Health and safety
+    { name: "Marketing Analysis", url: "notes_topics/notes_pages/collection_collation_and_analysis_to_make_decisions_notes.html" },
+    { name: "SWOT Analysis", url: "notes_topics/notes_pages/collection_collation_and_analysis_to_make_decisions_notes.html" },
+    { name: "Research Techniques", url: "notes_topics/notes_pages/collection_collation_and_analysis_to_make_decisions_notes.html" },
+    { name: "Primary Data", url: "notes_topics/notes_pages/collection_collation_and_analysis_to_make_decisions_notes.html" },
+    { name: "Secondary Data", url: "notes_topics/notes_pages/collection_collation_and_analysis_to_make_decisions_notes.html" },
+    { name: "Focus Group", url: "notes_topics/notes_pages/collection_collation_and_analysis_to_make_decisions_notes.html" },
+    { name: "Investigative Methods", url: "notes_topics/notes_pages/collection_collation_and_analysis_to_make_decisions_notes.html" },
+    { name: "Innovation Management", url: "notes_topics/notes_pages/collection_collation_and_analysis_to_make_decisions_notes.html" },
+    { name: "Imitation", url: "notes_topics/notes_pages/collection_collation_and_analysis_to_make_decisions_notes.html" },
+    { name: "Invention", url: "notes_topics/notes_pages/collection_collation_and_analysis_to_make_decisions_notes.html" },
+    { name: "Push Innovation", url: "notes_topics/notes_pages/collection_collation_and_analysis_to_make_decisions_notes.html" },
+    { name: "Pull Innovation", url: "notes_topics/notes_pages/collection_collation_and_analysis_to_make_decisions_notes.html" },
+    { name: "Cooperation Between Sectors", url: "notes_topics/notes_pages/collection_collation_and_analysis_to_make_decisions_notes.html" },
+    { name: "Encouragement of Creativity", url: "notes_topics/notes_pages/collection_collation_and_analysis_to_make_decisions_notes.html" },
+    { name: "Concurrent Manufacturing and QRM", url: "notes_topics/notes_pages/collection_collation_and_analysis_to_make_decisions_notes.html" },
+    { name: "Feasibility and Practicality", url: "notes_topics/notes_pages/collection_collation_and_analysis_to_make_decisions_notes.html" },
+    { name: "Computer Modelling in Production Planning", url: "notes_topics/notes_pages/collection_collation_and_analysis_to_make_decisions_notes.html" },
+    //Market analysis
+    { name: "Budgets", url: "notes_topics/notes_pages/modelling_the_costing_of_projects_notes.html" },
+    { name: "Planning for Production", url: "notes_topics/notes_pages/modelling_the_costing_of_projects_notes.html" },
+    { name: "Allocation of Employees, Materials, Scale of Production", url: "notes_topics/notes_pages/modelling_the_costing_of_projects_notes.html" },
+    { name: "Material Costs", url: "notes_topics/notes_pages/modelling_the_costing_of_projects_notes.html" },
+    { name: "Labour/Wages", url: "notes_topics/notes_pages/modelling_the_costing_of_projects_notes.html" },
+    { name: "Premises", url: "notes_topics/notes_pages/modelling_the_costing_of_projects_notes.html" },
+    { name: "Equipment Available for Scale of Production", url: "notes_topics/notes_pages/modelling_the_costing_of_projects_notes.html" },
+    { name: "Selection of Tools, Machines, and Manufacturing Processes", url: "notes_topics/notes_pages/modelling_the_costing_of_projects_notes.html" },
+    //Modelling the cost of projects^^
+    { name: "Patents", url: "notes_topics/notes_pages/property_rights_notes.html" },
+    { name: "Copyrights", url: "notes_topics/notes_pages/property_rights_notes.html" },
+    { name: "Design Rights", url: "notes_topics/notes_pages/property_rights_notes.html" },
+    { name: "Trademarks", url: "notes_topics/notes_pages/property_rights_notes.html" },
+    //Property rights
+    { name: "British Standards (BSI and Kitemark)", url: "notes_topics/notes_pages/standard_for_products_notes.html" },
+    { name: "European Standards (CEN and CE)", url: "notes_topics/notes_pages/standard_for_products_notes.html" },
+    { name: "International Standards (ISO)", url: "notes_topics/notes_pages/standard_for_products_notes.html" },
+    //Standards for products^^^
+    { name: "Critical Path Analysis (CPA)", url: "notes_topics/notes_pages/project_management_notes.html" },
+    { name: "Scrum", url: "notes_topics/notes_pages/project_management_notes.html" },
+    { name: "Six Sigma", url: "notes_topics/notes_pages/project_management_notes.html" },
+    //Project management systems^^^
+    { name: "Product life cycle", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html" },
+    { name: "Introduction (Product life cycle)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html" },
+    { name: "Growth (Product life cycle)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html" },
+    { name: "Maturity (Product life cycle)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html" },
+    { name: "Decline (Product life cycle)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html" },
+    { name: "Extensions (Product life cycle)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html" },
+    //Product life cycle
+    { name: "User centred design", url: "notes_topics/notes_pages/sta_to_explore_notes.html" },
+    { name: "Circular economy", url: "notes_topics/notes_pages/sta_to_explore_notes.html" },
+    { name: "Systems thinking", url: "notes_topics/notes_pages/sta_to_explore_notes.html" },
+    //Strat, techniques
+    { name: "Number, percentages, and percentiles (Maths)", url: "notes_topics/MathematicsForD&T.html" },
+    { name: "Number (Maths)", url: "notes_topics/MathematicsForD&T.html" },
+    { name: "Percentages (Maths)", url: "notes_topics/MathematicsForD&T.html" },
+    { name: "Percentiles (Maths)", url: "notes_topics/MathematicsForD&T.html" },
+
+    { name: "Ratio (Maths)", url: "notes_topics/notes_pages/maths_ratios.html" },
+
+    { name: "Surface area (Maths)", url: "notes_topics/notes_pages/maths_surface_area_and_volume.html" },
+    { name: "Volume (Maths)", url: "notes_topics/notes_pages/maths_surface_area_and_volume.html" },
+    { name: "Surface area and Volume", url: "notes_topics/notes_pages/maths_surface_area_and_volume.html" },
+
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 ];
-
-// Add event listener for keydown event
-searchInput.addEventListener('keydown', function(event) {
-    // Check if the key pressed is Enter (key code 13)
-    if (event.keyCode === 13) {
-        // Prevent the default form submission behavior
-        event.preventDefault();
-        
-        // Call the search function when Enter is pressed
-        search();
-    }
-});
-
-
 
 // Function to perform search and display multiple matches for selection
 function search() {
@@ -563,13 +649,23 @@ function search() {
     }
 }
 
+// Add event listener to handle input changes in the search input field
+document.getElementById('searchInput').addEventListener('input', search);
+
 // Add event listener to handle click on search result items
 document.getElementById('searchResults').addEventListener('click', function(event) {
     const clickedItem = event.target;
     if (clickedItem.classList.contains('search-result-item')) {
         window.location.href = clickedItem.dataset.url;
     }
-}); 
+});
 
-// Add event listener to handle input changes in the search input field
-document.getElementById('searchInput').addEventListener('input', search);
+// Handle the Enter key to go to the first result
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        const topResult = document.querySelector('.search-result-item');
+        if (topResult) {
+            window.location.href = topResult.dataset.url;
+        }
+    }
+});
