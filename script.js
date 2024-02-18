@@ -460,7 +460,57 @@ const topics = [
     { name: "Evaluation of risk", url: "notes_topics/notes_pages/safe_working_notes.html" },
     { name: "Risk assessments", url: "notes_topics/notes_pages/safe_working_notes.html" },
     { name: "Implement control methods", url: "notes_topics/notes_pages/safe_working_notes.html" },
-    { name: "Recording and storing of risk assessment documentation", url: "notes_topics/notes_pages/safe_working_notes.html" }
+    { name: "Recording and storing of risk assessment documentation", url: "notes_topics/notes_pages/safe_working_notes.html" },
+    //Safe working^^^
+    { name: "One-off production", url: "notes_topics/notes_pages/methods_of_production_notes.html" },
+    { name: "Batch production", url: "notes_topics/notes_pages/methods_of_production_notes.html" },
+    { name: "Mass production (Methods of production)", url: "notes_topics/notes_pages/methods_of_production_notes.html" },
+    { name: "Continuous production", url: "notes_topics/notes_pages/methods_of_production_notes.html" },
+    { name: "Production methods", url: "notes_topics/notes_pages/methods_of_production_notes.html" },
+    //Production methods
+    { name: "Quality control", url: "notes_topics/notes_pages/quality_control_systems_notes.html" },
+    { name: "Inspection", url: "notes_topics/notes_pages/quality_control_systems_notes.html" },
+    { name: "Computer-aided inspection", url: "notes_topics/notes_pages/quality_control_systems_notes.html" },
+    { name: "Testing/checks", url: "notes_topics/notes_pages/quality_control_systems_notes.html" },
+    { name: "Reducing cost of testing", url: "notes_topics/notes_pages/quality_control_systems_notes.html" },
+    { name: "Non-destructive testing", url: "notes_topics/notes_pages/quality_control_systems_notes.html" },
+    { name: "Destructive testing", url: "notes_topics/notes_pages/quality_control_systems_notes.html" },
+    { name: "Quality assurance", url: "notes_topics/notes_pages/quality_control_systems_notes.html" },
+    { name: "Total quality management (TQM)", url: "notes_topics/notes_pages/quality_control_systems_notes.html" },
+    { name: "ISO 9000", url: "notes_topics/notes_pages/quality_control_systems_notes.html" },
+    //QA & QC^^^
+    { name: "Production scheduling and production logistics", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "Robotics in production", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "Material handling systems", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "Modular/cell production systems", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "IT systems in production scheduling/logistics", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "Computer systems", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "Artificial intelligence", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "Robots on fully-automated production and assembly lines/cells", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "Material handling machines", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "Automated guided vehicles (AGVs)", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "Automated storage and retrieval systems (ASRS)", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "Flexible manufacturing systems (FMS)", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "Functional cells", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "Group technology cells", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "Product focused cells", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "Lean manufacturing using just-in-time (JIT) systems", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "Just-in-time (JIT)", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "Standardised parts", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "Quick response manufacturing (QRM)", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "Product data management (PDM)", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "Enterprise resource planning (ERP) systems", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "Concurrent manufacturing", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    { name: "Modern manufacturing methods and systems", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html" },
+    //Modern manufacturing methods and systems
+    { name: "Material selection", url: "notes_topics/notes_pages/product_life_cycle_notes.html" },
+    { name: "Manufacture", url: "notes_topics/notes_pages/product_life_cycle_notes.html" },
+    { name: "Distribution", url: "notes_topics/notes_pages/product_life_cycle_notes.html" },
+    { name: "Use", url: "notes_topics/notes_pages/product_life_cycle_notes.html" },
+    { name: "Repair and maintenance", url: "notes_topics/notes_pages/product_life_cycle_notes.html" },
+    { name: "End of life", url: "notes_topics/notes_pages/product_life_cycle_notes.html" },
+    { name: "Product Life Cycle", url: "notes_topics/notes_pages/product_life_cycle_notes.html" },
+
 
 
 ];
@@ -477,9 +527,18 @@ searchInput.addEventListener('keydown', function(event) {
     }
 });
 
+
+
 // Function to perform search and display multiple matches for selection
 function search() {
     const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
+
+    // Check if the search input is empty
+    if (searchInput === '') {
+        // Clear search results container
+        document.getElementById('searchResults').innerHTML = '';
+        return; // Exit the function if the search input is empty
+    }
 
     // Check if the search input matches any of the topics
     const matchedTopics = topics.filter(topic =>
@@ -510,4 +569,7 @@ document.getElementById('searchResults').addEventListener('click', function(even
     if (clickedItem.classList.contains('search-result-item')) {
         window.location.href = clickedItem.dataset.url;
     }
-});
+}); 
+
+// Add event listener to handle input changes in the search input field
+document.getElementById('searchInput').addEventListener('input', search);
