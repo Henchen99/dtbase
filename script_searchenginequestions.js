@@ -279,12 +279,139 @@ const questions = [
     { question: "Raymond Lowey", url: "../documents/Q&A/factors_influencing_development_of_products_exercises/Design_influence_methods_figures_Q&A.pdf" },
     { question: "Ettore Scotsass", url: "../documents/Q&A/factors_influencing_development_of_products_exercises/Design_influence_methods_figures_Q&A.pdf" },
     //Design theory
+    { question: "Consumer society", url: "../documents/Q&A/effects_of_tech_dev_exercises/Effects_tech_developements_Q&A.pdf" },
+    { question: "Built in obsolescence", url: "../documents/Q&A/effects_of_tech_dev_exercises/Effects_tech_developements_Q&A.pdf" },
+    { question: "Computers in the development and manufacture of products", url: "../documents/Q&A/effects_of_tech_dev_exercises/Effects_tech_developements_Q&A.pdf" },
+    { question: "CIM systems", url: "../documents/Q&A/effects_of_tech_dev_exercises/Effects_tech_developements_Q&A.pdf" },
+    { question: "Computer-to-plate technology", url: "../documents/Q&A/effects_of_tech_dev_exercises/Effects_tech_developements_Q&A.pdf" },
+    { question: "Miniturisation of products and components", url: "../documents/Q&A/effects_of_tech_dev_exercises/Effects_tech_developements_Q&A.pdf" },
+    { question: "Advanced integrated circuits", url: "../documents/Q&A/effects_of_tech_dev_exercises/Effects_tech_developements_Q&A.pdf" },
+    { question: "Advanced battery technology", url: "../documents/Q&A/effects_of_tech_dev_exercises/Effects_tech_developements_Q&A.pdf" },
+    { question: "Advanced liquid crystal displays", url: "../documents/Q&A/effects_of_tech_dev_exercises/Effects_tech_developements_Q&A.pdf" },
+    { question: "Smart materials and products for innovative applications", url: "../documents/Q&A/effects_of_tech_dev_exercises/Effects_tech_developements_Q&A.pdf" },
+    { question: "Global marketplace", url: "../documents/Q&A/effects_of_tech_dev_exercises/Effects_tech_developements_Q&A.pdf" },
+    { question: "Offshore manufacturing", url: "../documents/Q&A/effects_of_tech_dev_exercises/Effects_tech_developements_Q&A.pdf" },
+    { question: "Multinational companies", url: "../documents/Q&A/effects_of_tech_dev_exercises/Effects_tech_developements_Q&A.pdf" },
+    { question: "Outsourcing", url: "../documents/Q&A/effects_of_tech_dev_exercises/Effects_tech_developements_Q&A.pdf" },
+    { question: "Mass production (effects of technological developments)", url: "../documents/Q&A/effects_of_tech_dev_exercises/Effects_tech_developements_Q&A.pdf" },
+    //Tech dev^^^
+    { question: "Safe working practice", url: "../documents/Q&A/safe_working_practices_exercises/Adopting_safe_working_practices_Q&A.pdf" },
+    { question: "Understanding the need for risk assessments", url: "../documents/Q&A/safe_working_practices_exercises/Adopting_safe_working_practices_Q&A.pdf" },
+    { question: "Training", url: "../documents/Q&A/safe_working_practices_exercises/Adopting_safe_working_practices_Q&A.pdf" },
+    { question: "Machine maintenance and guarding", url: "../documents/Q&A/safe_working_practices_exercises/Adopting_safe_working_practices_Q&A.pdf" },
+    { question: "Extraction systems", url: "../documents/Q&A/safe_working_practices_exercises/Adopting_safe_working_practices_Q&A.pdf" },
+    { question: "Provision of PPE", url: "../documents/Q&A/safe_working_practices_exercises/Adopting_safe_working_practices_Q&A.pdf" },
+    { question: "General safe working practices", url: "../documents/Q&A/safe_working_practices_exercises/Adopting_safe_working_practices_Q&A.pdf" },
+    { question: "Health and Safety Executive", url: "../documents/Q&A/safe_working_practices_exercises/Adopting_safe_working_practices_Q&A.pdf" },
+    { question: "HSE", url: "../documents/Q&A/safe_working_practices_exercises/Adopting_safe_working_practices_Q&A.pdf" },
+    { question: "Identification of potential hazards", url: "../documents/Q&A/safe_working_practices_exercises/Adopting_safe_working_practices_Q&A.pdf" },
+    { question: "Identifying the people at risk", url: "../documents/Q&A/safe_working_practices_exercises/Adopting_safe_working_practices_Q&A.pdf" },
+    { question: "Evaluation of risk", url: "../documents/Q&A/safe_working_practices_exercises/Adopting_safe_working_practices_Q&A.pdf" },
+    { question: "Risk assessments", url: "../documents/Q&A/safe_working_practices_exercises/Adopting_safe_working_practices_Q&A.pdf" },
+    { question: "Implement control methods", url: "../documents/Q&A/safe_working_practices_exercises/Adopting_safe_working_practices_Q&A.pdf" },
+    { question: "Recording and storing of risk assessment documentation", url: "../documents/Q&A/safe_working_practices_exercises/Adopting_safe_working_practices_Q&A.pdf" },
+    //Safe working^^
+    { question: "One-off production", url: "../documents/Q&A/features_of_manufacturing_industries/Methods%20of%20production_Q&A.pdf" },
+    { question: "Batch production", url: "../documents/Q&A/features_of_manufacturing_industries/Methods%20of%20production_Q&A.pdf" },
+    { question: "Mass production (Methods of production)", url: "../documents/Q&A/features_of_manufacturing_industries/Methods%20of%20production_Q&A.pdf" },
+    { question: "Continuous production", url: "../documents/Q&A/features_of_manufacturing_industries/Methods%20of%20production_Q&A.pdf" },
+    { question: "Production methods", url: "../documents/Q&A/features_of_manufacturing_industries/Methods%20of%20production_Q&A.pdf" },
+    //Methods of production
+    { question: "Quality control", url: "../documents/Q&A/features_of_manufacturing_industries/Quality%20Monitoring%20Systems_Q&A.pdf" },
+    { question: "Inspection", url: "../documents/Q&A/features_of_manufacturing_industries/Quality%20Monitoring%20Systems_Q&A.pdf" },
+    { question: "Computer-aided inspection", url: "../documents/Q&A/features_of_manufacturing_industries/Quality%20Monitoring%20Systems_Q&A.pdf" },
+    { question: "Testing/checks", url: "../documents/Q&A/features_of_manufacturing_industries/Quality%20Monitoring%20Systems_Q&A.pdf" },
+    { question: "Reducing cost of testing", url: "../documents/Q&A/features_of_manufacturing_industries/Quality%20Monitoring%20Systems_Q&A.pdf" },
+    { question: "Non-destructive testing", url: "../documents/Q&A/features_of_manufacturing_industries/Quality%20Monitoring%20Systems_Q&A.pdf" },
+    { question: "Destructive testing", url: "../documents/Q&A/features_of_manufacturing_industries/Quality%20Monitoring%20Systems_Q&A.pdf" },
+    { question: "Quality assurance", url: "../documents/Q&A/features_of_manufacturing_industries/Quality%20Monitoring%20Systems_Q&A.pdf" },
+    { question: "Total quality management (TQM)", url: "../documents/Q&A/features_of_manufacturing_industries/Quality%20Monitoring%20Systems_Q&A.pdf" },
+    { question: "ISO 9000", url: "../documents/Q&A/features_of_manufacturing_industries/Quality%20Monitoring%20Systems_Q&A.pdf" },
+    //QA & QC
+    { question: "Production scheduling and production logistics", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Robotics in production", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Material handling systems", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Modular/cell production systems", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "IT systems in production scheduling/logistics", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Computer systems", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Artificial intelligence", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Robots on fully-automated production and assembly lines/cells", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Material handling machines", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Automated guided vehicles (AGVs)", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Automated storage and retrieval systems (ASRS)", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Flexible manufacturing systems (FMS)", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Functional cells", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Group technology cells", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Product focused cells", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Lean manufacturing using just-in-time (JIT) systems", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Just-in-time (JIT)", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Standardised parts", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Quick response manufacturing (QRM)", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Product data management (PDM)", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Enterprise resource planning (ERP) systems", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Concurrent manufacturing", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Modern manufacturing methods and systems", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    //Modern manufacturing methods and systems
+    { question: "Material selection", url: "../documents/Q&A/design_for_maintenance_and_cleaner_environment_exercises/products_life_cycle_Q&A.pdf" },
+    { question: "Manufacture", url: "../documents/Q&A/design_for_maintenance_and_cleaner_environment_exercises/products_life_cycle_Q&A.pdf" },
+    { question: "Distribution", url: "../documents/Q&A/design_for_maintenance_and_cleaner_environment_exercises/products_life_cycle_Q&A.pdf" },
+    { question: "Use", url: "../documents/Q&A/design_for_maintenance_and_cleaner_environment_exercises/products_life_cycle_Q&A.pdf" },
+    { question: "Repair and maintenance", url: "../documents/Q&A/design_for_maintenance_and_cleaner_environment_exercises/products_life_cycle_Q&A.pdf" },
+    { question: "End of life", url: "../documents/Q&A/design_for_maintenance_and_cleaner_environment_exercises/products_life_cycle_Q&A.pdf" },
+    { question: "Product Life Cycle", url: "../documents/Q&A/design_for_maintenance_and_cleaner_environment_exercises/products_life_cycle_Q&A.pdf" },
+    //Product Life Cycle
+    { question: "Cost implications to the consumer and manufacturer", url: "../documents/Q&A/design_for_maintenance_and_cleaner_environment_exercises/Wider_issues_of_using_cleaner_technology_Q&A.pdf" },
+    { question: "Sustainability", url: "../documents/Q&A/design_for_maintenance_and_cleaner_environment_exercises/Wider_issues_of_using_cleaner_technology_Q&A.pdf" },
+    { question: "Wider issues of using cleaner technologies", url: "../documents/Q&A/design_for_maintenance_and_cleaner_environment_exercises/Wider_issues_of_using_cleaner_technology_Q&A.pdf" },    
+    //Wider issues of using cleaner tech
+    { question: "Consumer Rights Act (2015)", url: "../documents/Q&A/current_legislation_exercises/Consumer_rights_legislation_Q&A.pdf" },
+    { question: "Sale of Goods Act (1979)", url: "../documents/Q&A/current_legislation_exercises/Consumer_rights_legislation_Q&A.pdf" },
+    { question: "Consumer Rights Legislation", url: "../documents/Q&A/current_legislation_exercises/Consumer_rights_legislation_Q&A.pdf" },
+    //Consumer rights^^^
+    { question: "Health and Safety at Work Act (1974)", url: "../documents/Q&A/current_legislation_exercises/Health_and_safety_Q&A.pdf" },
+    { question: "Health and Safety", url: "../documents/Q&A/current_legislation_exercises/Health_and_safety_Q&A.pdf" },
+    { question: "Control of Substances Hazardous to Health (COSHH) Regulation", url: "../documents/Q&A/current_legislation_exercises/Health_and_safety_Q&A.pdf" },
+    //Health and Safety Laws
 
 
 
+    //Market analysis
+    { question: "Budgets", url: "../documents/Q&A/information_handling_planning_exercises/modelling_the_costing_of_projects_to_achieve_optimum_outcome_Q&A.pdf" },
+    { question: "Planning for Production", url: "../documents/Q&A/information_handling_planning_exercises/modelling_the_costing_of_projects_to_achieve_optimum_outcome_Q&A.pdf" },
+    { question: "Allocation of Employees, Materials, Scale of Production", url: "../documents/Q&A/information_handling_planning_exercises/modelling_the_costing_of_projects_to_achieve_optimum_outcome_Q&A.pdf" },
+    { question: "Material Costs", url: "../documents/Q&A/information_handling_planning_exercises/modelling_the_costing_of_projects_to_achieve_optimum_outcome_Q&A.pdf" },
+    { question: "Labour/Wages", url: "../documents/Q&A/information_handling_planning_exercises/modelling_the_costing_of_projects_to_achieve_optimum_outcome_Q&A.pdf" },
+    { question: "Premises", url: "../documents/Q&A/information_handling_planning_exercises/modelling_the_costing_of_projects_to_achieve_optimum_outcome_Q&A.pdf" },
+    { question: "Equipment Available for Scale of Production", url: "../documents/Q&A/information_handling_planning_exercises/modelling_the_costing_of_projects_to_achieve_optimum_outcome_Q&A.pdf" },
+    { question: "Selection of Tools, Machines, and Manufacturing Processes", url: "../documents/Q&A/information_handling_planning_exercises/modelling_the_costing_of_projects_to_achieve_optimum_outcome_Q&A.pdf" },
+    //Modelling the cost of projects^^
+    { question: "Patents", url: "../documents/Q&A/information_handling_planning_exercises/Intellectual_Property_rights_Q&A.pdf" },
+    { question: "Copyrights", url: "../documents/Q&A/information_handling_planning_exercises/Intellectual_Property_rights_Q&A.pdf" },
+    { question: "Design Rights", url: "../documents/Q&A/information_handling_planning_exercises/Intellectual_Property_rights_Q&A.pdf" },
+    { question: "Trademarks", url: "../documents/Q&A/information_handling_planning_exercises/Intellectual_Property_rights_Q&A.pdf" },
+    //Property rights^^
+    { question: "British Standards (BSI and Kitemark)", url: "../documents/Q&A/information_handling_planning_exercises/Standards_of_products_Q&A.pdf" },
+    { question: "European Standards (CEN and CE)", url: "../documents/Q&A/information_handling_planning_exercises/Standards_of_products_Q&A.pdf" },
+    { question: "International Standards (ISO)", url: "../documents/Q&A/information_handling_planning_exercises/Standards_of_products_Q&A.pdf" },
+    //Standards for products^^^
+    { question: "Critical Path Analysis (CPA)", url: "../documents/Q&A/further_processes_techniques_exercises/Project_management_Q&A.pdf" },
+    { question: "Scrum", url: "../documents/Q&A/further_processes_techniques_exercises/Project_management_Q&A.pdf" },
+    { question: "Six Sigma", url: "../documents/Q&A/further_processes_techniques_exercises/Project_management_Q&A.pdf" },
+    //Project management systems^^^
+    { question: "Product life cycle", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
+    { question: "Introduction (Product life cycle)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
+    { question: "Growth (Product life cycle)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
+    { question: "Maturity (Product life cycle)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
+    { question: "Decline (Product life cycle)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
+    { question: "Extensions (Product life cycle)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
+    //Product life cycle
+    { question: "User centred design", url: "../documents/Q&A/further_processes_techniques_exercises/Strategies_techniques_and_approaches_to_explore_and_create_design_idea_Q&A.pdf" },
+    { question: "Circular economy", url: "../documents/Q&A/further_processes_techniques_exercises/Strategies_techniques_and_approaches_to_explore_and_create_design_idea_Q&A.pdf" },
+    { question: "Systems thinking", url: "../documents/Q&A/further_processes_techniques_exercises/Strategies_techniques_and_approaches_to_explore_and_create_design_idea_Q&A.pdf" },
+    
 
 
-      
+
 ];
 
     
