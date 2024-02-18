@@ -408,10 +408,34 @@ const questions = [
     { question: "User centred design", url: "../documents/Q&A/further_processes_techniques_exercises/Strategies_techniques_and_approaches_to_explore_and_create_design_idea_Q&A.pdf" },
     { question: "Circular economy", url: "../documents/Q&A/further_processes_techniques_exercises/Strategies_techniques_and_approaches_to_explore_and_create_design_idea_Q&A.pdf" },
     { question: "Systems thinking", url: "../documents/Q&A/further_processes_techniques_exercises/Strategies_techniques_and_approaches_to_explore_and_create_design_idea_Q&A.pdf" },
+    //Strat, techniques
+
+    { question: "Number, percentages, and percentiles (Maths)", url: "../documents/Q&A/maths_exercises/DT_Maths_Number_Q&A.pdf" },
+    { question: "Number (Maths)", url: "../documents/Q&A/maths_exercises/DT_Maths_Number_Q&A.pdf" },
+    { question: "Percentages (Maths)", url: "../documents/Q&A/maths_exercises/DT_Maths_Number_Q&A.pdf" },
+    { question: "Percentiles (Maths)", url: "../documents/Q&A/maths_exercises/DT_Maths_Number_Q&A.pdf" },
+
+    { question: "Ratio (Maths)", url: "../documents/Q&A/maths_exercises/DT_Maths_Ratio_Q&A.pdf" },
+
+    { question: "Surface area (Maths)", url: "../documents/Q&A/maths_exercises/DT_Maths_SA&Volume_Q&A.pdf" },
+    { question: "Volume (Maths)", url: "../documents/Q&A/maths_exercises/DT_Maths_SA&Volume_Q&A.pdf" },
+    { question: "Surface area and Volume (Maths)", url: "../documents/Q&A/maths_exercises/DT_Maths_SA&Volume_Q&A.pdf" },
+
+    { question: "Trigonometry (Maths)", url: "../documents/Q&A/maths_exercises/DT_Maths_Trig_Q&A.pdf" },
+    { question: "Pythagoras (Maths)", url: "../documents/Q&A/maths_exercises/DT_Maths_Trig_Q&A.pdf" },
+
+    { question: "Graphs and Charts (Maths)", url: "../documents/Q&A/maths_exercises/DT_Maths_Graphs&Charts_Q&A.pdf" },
+    { question: "Charts (Maths)", url: "../documents/Q&A/maths_exercises/DT_Maths_Graphs&Charts_Q&A.pdf" },
+    { question: "Graphs (Maths)", url: "../documents/Q&A/maths_exercises/DT_Maths_Graphs&Charts_Q&A.pdf" },
+    { question: "Cumulative frequency (Maths)", url: "../documents/Q&A/maths_exercises/DT_Maths_Graphs&Charts_Q&A.pdf" },
+
+    { question: "Coordinates and Geometry (Maths)", url: "../documents/Q&A/maths_exercises/DT_Maths_Coords&Geometry_Q&A.pdf" },
+    { question: "Geometry (Maths)", url: "../documents/Q&A/maths_exercises/DT_Maths_Coords&Geometry_Q&A.pdf" },
+    { question: "Coordinates (Maths)", url: "../documents/Q&A/maths_exercises/DT_Maths_Coords&Geometry_Q&A.pdf" },
+
+    { question: "Statistics (Maths)", url: "../documents/Q&A/maths_exercises/DT_Maths_Stats_Q&A.pdf" },
+    { question: "Probability (Maths)", url: "../documents/Q&A/maths_exercises/DT_Maths_Stats_Q&A.pdf" },
     
-
-
-
 ];
 
     
