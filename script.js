@@ -325,6 +325,7 @@ const topics = [
     { name: "Horizontal Milling", url: "notes_topics/notes_pages/machining_notes.html" },
     { name: "Routing", url: "notes_topics/notes_pages/machining_notes.html" },
     { name: "Drilling", url: "notes_topics/notes_pages/machining_notes.html" },
+    { name: "Machining", url: "notes_topics/notes_pages/machining_notes.html" },
     { name: "Turning", url: "notes_topics/notes_pages/machining_notes.html" },
     { name: "Stamping", url: "notes_topics/notes_pages/machining_notes.html" },
     { name: "Pressing", url: "notes_topics/notes_pages/machining_notes.html" },
@@ -587,7 +588,7 @@ const topics = [
 
     { name: "Statistics (Maths)", url: "notes_topics/notes_pages/maths_statistics.html" },
     { name: "Probability (Maths)", url: "notes_topics/notes_pages/maths_statistics.html" },
-        
+
 ];
 
 // Function to perform search and display multiple matches for selection
@@ -644,5 +645,7 @@ document.addEventListener('keydown', function(event) {
         }
     }
 });  
+
+
 
 
