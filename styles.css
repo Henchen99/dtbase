@@ -430,9 +430,11 @@ body {
 #searchInput {
     padding: 10px;
     border: 2px solid #ccc;
-    border-radius: 20px; /* Rounded corners */
-    width: 300px; /* Adjust width as needed */
-    font-size: 16px;
+    border-radius: 0px; /* Rounded corners */
+    width: 100%; /* Adjust width as needed */
+    font-size: 20px;
+    margin-top: 1px; /* Adjust the top margin */
+    margin-bottom: 1px; /* Adjust the bottom margin */
     outline: none; /* Remove focus outline */
 }
 
@@ -445,7 +447,10 @@ button {
     background-color: rgb(185, 22, 22);
     color: white;
     border: none;
-    border-radius: 20px; /* Rounded corners */
+    margin-top: 1px; /* Adjust the top margin */
+    margin-bottom: 1px; /* Adjust the bottom margin */
+    font-size: 20px;
+    border-radius: 0px; /* Rounded corners */
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-left: 10px; /* Adjust margin as needed */
