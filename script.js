@@ -179,7 +179,6 @@ const topics = [
     { name: 'Commerical printing papers', url: 'notes_topics/notes_pages/papers_and_boards_materials_notes.html' },
     { name: 'Boards', url: 'notes_topics/notes_pages/papers_and_boards_materials_notes.html' },
     { name: 'How papers/boards are made', url: 'notes_topics/notes_pages/papers_and_boards_materials_notes.html' },
-    { name: 'How is paper made', url: 'notes_topics/notes_pages/papers_and_boards_materials_notes.html' },
     { name: 'Measuring papers and boards', url: 'notes_topics/notes_pages/papers_and_boards_materials_notes.html' },
     { name: 'Layout paper', url: 'notes_topics/notes_pages/papers_and_boards_materials_notes.html' },
     { name: 'Tracing paper', url: 'notes_topics/notes_pages/papers_and_boards_materials_notes.html' },
@@ -268,6 +267,7 @@ const topics = [
     { name: 'Die casting', url: 'notes_topics/notes_pages/casting_notes.html' },
     { name: 'Resin casting', url: 'notes_topics/notes_pages/casting_notes.html' },
     { name: 'Plaster of Paris casting', url: 'notes_topics/notes_pages/casting_notes.html' },
+    { name: 'Casting', url: 'notes_topics/notes_pages/casting_notes.html' },
     // Casting^^^
     { name: 'Design decisions', url: 'notes_topics/notes_pages/design_decisions_notes.html' },
     { name: 'Pictorial drawings', url: 'notes_topics/notes_pages/design_decisions_notes.html' },
