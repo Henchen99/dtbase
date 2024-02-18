@@ -110,13 +110,9 @@ toggleArrows.forEach((toggleArrow) => {
 // Define your topics and their corresponding URLs
 const topics = [
     { name: 'Woods', url: 'notes_topics/notes_pages/woods_materials_notes.html' },
-    { name: 'Wood', url: 'notes_topics/notes_pages/woods_materials_notes.html' },
     { name: 'Timbers', url: 'notes_topics/notes_pages/woods_materials_notes.html' },
-    { name: 'Timber', url: 'notes_topics/notes_pages/woods_materials_notes.html' },
     { name: 'Hardwoods', url: 'notes_topics/notes_pages/woods_materials_notes.html' },
-    { name: 'Hardwood', url: 'notes_topics/notes_pages/woods_materials_notes.html' },
     { name: 'Softwoods', url: 'notes_topics/notes_pages/woods_materials_notes.html' },
-    { name: 'Softwood', url: 'notes_topics/notes_pages/woods_materials_notes.html' },
     { name: 'Manufactured Boards', url: 'notes_topics/notes_pages/woods_materials_notes.html' },
     { name: 'Oak', url: 'notes_topics/notes_pages/woods_materials_notes.html' },
     { name: 'Mahogany', url: 'notes_topics/notes_pages/woods_materials_notes.html' },
@@ -134,7 +130,6 @@ const topics = [
     { name: 'Blockboard', url: 'notes_topics/notes_pages/woods_materials_notes.html' },
     // WOODS^^^
     { name: 'Metals', url: 'notes_topics/notes_pages/metals_materials_notes.html' },
-    { name: 'Metal', url: 'notes_topics/notes_pages/metals_materials_notes.html' },
     { name: 'Ferrous Metals', url: 'notes_topics/notes_pages/metals_materials_notes.html' },
     { name: 'Non-ferrous Metals', url: 'notes_topics/notes_pages/metals_materials_notes.html' },
     { name: 'Alloys', url: 'notes_topics/notes_pages/metals_materials_notes.html' },
@@ -151,9 +146,7 @@ const topics = [
     { name: 'Brass', url: 'notes_topics/notes_pages/metals_materials_notes.html' },
     // Metals^^^
     { name: 'Plastics', url: 'notes_topics/notes_pages/polymers_materials_notes.html' },
-    { name: 'Plastic', url: 'notes_topics/notes_pages/polymers_materials_notes.html' },
     { name: 'Polymers', url: 'notes_topics/notes_pages/polymers_materials_notes.html' },
-    { name: 'Polymer', url: 'notes_topics/notes_pages/polymers_materials_notes.html' },
     { name: 'Thermoplastics', url: 'notes_topics/notes_pages/polymers_materials_notes.html' },
     { name: 'Thermosetting Plastics', url: 'notes_topics/notes_pages/polymers_materials_notes.html' },
     { name: 'Elastomers', url: 'notes_topics/notes_pages/polymers_materials_notes.html' },
@@ -169,7 +162,6 @@ const topics = [
     { name: 'Rubber', url: 'notes_topics/notes_pages/polymers_materials_notes.html' },
     // Polymers^^^
     { name: 'Composites', url: 'notes_topics/notes_pages/composites_materials_notes.html' },
-    { name: 'Composite', url: 'notes_topics/notes_pages/composites_materials_notes.html' },
     { name: 'Fibre-based composites', url: 'notes_topics/notes_pages/composites_materials_notes.html' },
     { name: 'Particle-based composites', url: 'notes_topics/notes_pages/composites_materials_notes.html' },
     { name: 'Sheet-based composites', url: 'notes_topics/notes_pages/composites_materials_notes.html' },
@@ -199,10 +191,8 @@ const topics = [
     { name: 'Foam board', url: 'notes_topics/notes_pages/papers_and_boards_materials_notes.html' },
     { name: 'Folding box board', url: 'notes_topics/notes_pages/papers_and_boards_materials_notes.html' },
     { name: 'Foil-lined board', url: 'notes_topics/notes_pages/papers_and_boards_materials_notes.html' },
-    { name: 'Paper', url: 'notes_topics/notes_pages/papers_and_boards_materials_notes.html' },
     { name: 'Papers', url: 'notes_topics/notes_pages/papers_and_boards_materials_notes.html' },
     { name: 'Boards', url: 'notes_topics/notes_pages/papers_and_boards_materials_notes.html' },
-    { name: 'Board', url: 'notes_topics/notes_pages/papers_and_boards_materials_notes.html' },
     // Papers and boards^^^
     { name: 'Textiles', url: 'notes_topics/notes_pages/textiles_materials_notes.html' },
     { name: 'Natural fibres', url: 'notes_topics/notes_pages/textiles_materials_notes.html' },
@@ -219,7 +209,6 @@ const topics = [
     { name: 'PTFE', url: 'notes_topics/notes_pages/textiles_materials_notes.html' },
     // Textiles^^^
     { name: 'Smart Materials', url: 'notes_topics/notes_pages/smart_materials_notes.html' },
-    { name: 'Smart Materials', url: 'notes_topics/notes_pages/smart_materials_notes.html' },
     { name: 'SMA', url: 'notes_topics/notes_pages/smart_materials_notes.html' },
     { name: 'Shape memory alloy', url: 'notes_topics/notes_pages/smart_materials_notes.html' },
     { name: 'Reactive glass', url: 'notes_topics/notes_pages/smart_materials_notes.html' },
@@ -233,8 +222,7 @@ const topics = [
     { name: 'Thermochromic', url: 'notes_topics/notes_pages/smart_materials_notes.html' },
     { name: 'Quantum tunnelling composites', url: 'notes_topics/notes_pages/smart_materials_notes.html' },
     { name: 'QTC', url: 'notes_topics/notes_pages/smart_materials_notes.html' },
-    { name: 'Piezoelectric material', url: 'notes_topics/notes_pages/smart_materials_notes.html' },
-    { name: 'Piezoelectric', url: 'notes_topics/notes_pages/smart_materials_notes.html' },
+    { name: 'Piezoelectric materials', url: 'notes_topics/notes_pages/smart_materials_notes.html' },
     // Smart materials^^^
     { name: 'Modern Materials', url: 'notes_topics/notes_pages/modern_materials_notes.html' },
     { name: 'Thermo-ceramics', url: 'notes_topics/notes_pages/modern_materials_notes.html' },
@@ -583,33 +571,22 @@ const topics = [
 
     { name: "Surface area (Maths)", url: "notes_topics/notes_pages/maths_surface_area_and_volume.html" },
     { name: "Volume (Maths)", url: "notes_topics/notes_pages/maths_surface_area_and_volume.html" },
-    { name: "Surface area and Volume", url: "notes_topics/notes_pages/maths_surface_area_and_volume.html" },
+    { name: "Surface area and Volume (Maths)", url: "notes_topics/notes_pages/maths_surface_area_and_volume.html" },
 
-    
+    { name: "Trigonometry (Maths)", url: "notes_topics/notes_pages/maths_trigonometry.html" },
+    { name: "Pythagoras (Maths)", url: "notes_topics/notes_pages/maths_trigonometry.html" },
 
+    { name: "Graphs and Charts (Maths)", url: "notes_topics/notes_pages/maths_graphs_and_charts.html" },
+    { name: "Charts (Maths)", url: "notes_topics/notes_pages/maths_graphs_and_charts.html" },
+    { name: "Graphs (Maths)", url: "notes_topics/notes_pages/maths_graphs_and_charts.html" },
+    { name: "Cumulative frequency (Maths)", url: "notes_topics/notes_pages/maths_graphs_and_charts.html" },
 
+    { name: "Coordinates and Geometry (Maths)", url: "notes_topics/notes_pages/maths_graphs_and_charts.html" },
+    { name: "Geometry (Maths)", url: "notes_topics/notes_pages/maths_graphs_and_charts.html" },
+    { name: "Coordinates (Maths)", url: "notes_topics/notes_pages/maths_graphs_and_charts.html" },
 
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    { name: "Statistics (Maths)", url: "notes_topics/notes_pages/maths_statistics.html" },
+    { name: "Probability (Maths)", url: "notes_topics/notes_pages/maths_statistics.html" },
 
 
 
@@ -635,14 +612,14 @@ function search() {
     resultsContainer.innerHTML = ''; // Clear previous search results
 
     if (matchedTopics.length > 0) {
-        // Display the matched topics for selection
-        matchedTopics.forEach(topic => {
+        // Display the first 10 matched topics for selection
+        for (let i = 0; i < Math.min(matchedTopics.length, 10); i++) {
             const resultItem = document.createElement('li');
-            resultItem.textContent = topic.name;
+            resultItem.textContent = matchedTopics[i].name;
             resultItem.classList.add('search-result-item');
-            resultItem.dataset.url = topic.url; // Store URL as data attribute
+            resultItem.dataset.url = matchedTopics[i].url; // Store URL as data attribute
             resultsContainer.appendChild(resultItem);
-        });
+        }
     } else {
         // Handle case where no match is found
         resultsContainer.innerHTML = '<li>No matching topic found.</li>';
@@ -668,4 +645,4 @@ document.addEventListener('keydown', function(event) {
             window.location.href = topResult.dataset.url;
         }
     }
-});
+});  
