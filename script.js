@@ -587,9 +587,7 @@ const topics = [
 
     { name: "Statistics (Maths)", url: "notes_topics/notes_pages/maths_statistics.html" },
     { name: "Probability (Maths)", url: "notes_topics/notes_pages/maths_statistics.html" },
-
-
-
+        
 ];
 
 // Function to perform search and display multiple matches for selection
@@ -646,3 +644,5 @@ document.addEventListener('keydown', function(event) {
         }
     }
 });  
+
+
