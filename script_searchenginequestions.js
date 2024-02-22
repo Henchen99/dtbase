@@ -216,6 +216,13 @@ const questions = [
     { question: "Finite Element Analysis (FEA)", url: "../documents/Q&A/digital_tech_exercises/Computer_aided_design_Q&A.pdf" },
     { question: "Computational fluid dynamics (CFD)", url: "../documents/Q&A/digital_tech_exercises/Computer_aided_design_Q&A.pdf" },
     //CAD^^
+
+
+    { question: "Marking Out Techniques", url: "../documents/Q&A/processes_techniques_special_tools_exercises/Marking_out_Q&A.pdf" },
+    //Marking Out Techniques^^
+
+
+
     { question: "CAM software", url: "../documents/Q&A/digital_tech_exercises/Computer_aided_manufacture_Q&A.pdf" },
     { question: "CNC", url: "../documents/Q&A/digital_tech_exercises/Computer_aided_manufacture_Q&A.pdf" },
     { question: "CAM machines", url: "../documents/Q&A/digital_tech_exercises/Computer_aided_manufacture_Q&A.pdf" },
