@@ -393,7 +393,7 @@ const questions = [
     { question: "Scrum", url: "../documents/Q&A/further_processes_techniques_exercises/Project_management_Q&A.pdf" },
     { question: "Six Sigma", url: "../documents/Q&A/further_processes_techniques_exercises/Project_management_Q&A.pdf" },
     //Project management systems^^^
-    { question: "Product life cycle (Sales)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
+    { question: "Product Life Cycle (Sales)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
     { question: "Introduction (Product life cycle)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
     { question: "Growth (Product life cycle)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
     { question: "Maturity (Product life cycle)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },

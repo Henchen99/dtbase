@@ -544,7 +544,7 @@ const topics = [
     { name: "Scrum", url: "notes_topics/notes_pages/project_management_notes.html#Scrum" },
     { name: "Six Sigma", url: "notes_topics/notes_pages/project_management_notes.html#SixSigma" },
     //Project management systems^^^
-    { name: "Product life cycle (Sales)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html" },
+    { name: "Product Life Cycle (Sales)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html" },
     { name: "Introduction (Product life cycle)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html#Introduction" },
     { name: "Growth (Product life cycle)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html#Growth" },
     { name: "Maturity (Product life cycle)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html#Maturity" },
