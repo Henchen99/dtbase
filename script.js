@@ -545,11 +545,11 @@ const topics = [
     { name: "Six Sigma", url: "notes_topics/notes_pages/project_management_notes.html#SixSigma" },
     //Project management systems^^^
     { name: "Product Life Cycle (Sales)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html" },
-    { name: "Introduction (Product life cycle)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html#Introduction" },
-    { name: "Growth (Product life cycle)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html#Growth" },
-    { name: "Maturity (Product life cycle)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html#Maturity" },
-    { name: "Decline (Product life cycle)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html#Decline" },
-    { name: "Extensions (Product life cycle)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html#Extensions" },
+    { name: "Introduction (Product life cycle - Sales)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html#Introduction" },
+    { name: "Growth (Product life cycle - Sales)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html#Growth" },
+    { name: "Maturity (Product life cycle - Sales)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html#Maturity" },
+    { name: "Decline (Product life cycle - Sales)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html#Decline" },
+    { name: "Extensions (Product life cycle - Sales)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html#Extensions" },
     //Product life cycle
     { name: "User centred design", url: "notes_topics/notes_pages/sta_to_explore_notes.html#UserCentredDesign" },
     { name: "Circular economy", url: "notes_topics/notes_pages/sta_to_explore_notes.html#CircularEconomy" },

@@ -394,11 +394,11 @@ const questions = [
     { question: "Six Sigma", url: "../documents/Q&A/further_processes_techniques_exercises/Project_management_Q&A.pdf" },
     //Project management systems^^^
     { question: "Product Life Cycle (Sales)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
-    { question: "Introduction (Product life cycle)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
-    { question: "Growth (Product life cycle)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
-    { question: "Maturity (Product life cycle)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
-    { question: "Decline (Product life cycle)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
-    { question: "Extensions (Product life cycle)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
+    { question: "Introduction (Product life cycle - Sales)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
+    { question: "Growth (Product life cycle - Sales)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
+    { question: "Maturity (Product life cycle - Sales)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
+    { question: "Decline (Product life cycle - Sales)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
+    { question: "Extensions (Product life cycle - Sales)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
     //Product life cycle
     { question: "User centred design", url: "../documents/Q&A/further_processes_techniques_exercises/Strategies_techniques_and_approaches_to_explore_and_create_design_idea_Q&A.pdf" },
     { question: "Circular economy", url: "../documents/Q&A/further_processes_techniques_exercises/Strategies_techniques_and_approaches_to_explore_and_create_design_idea_Q&A.pdf" },
