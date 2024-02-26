@@ -488,7 +488,7 @@ const topics = [
     { name: "Use", url: "notes_topics/notes_pages/product_life_cycle_notes.html#Use" },
     { name: "Repair and maintenance", url: "notes_topics/notes_pages/product_life_cycle_notes.html#RepairMaintenance" },
     { name: "End of life", url: "notes_topics/notes_pages/product_life_cycle_notes.html#EndOfLife" },
-    { name: "Product Life Cycle", url: "notes_topics/notes_pages/product_life_cycle_notes.html" },
+    { name: "Product Life Cycle (Environmental)", url: "notes_topics/notes_pages/product_life_cycle_notes.html" },
     //Product Life Cycle
     { name: "Cost implications to the consumer and manufacturer (Cleaner technology)", url: "notes_topics/notes_pages/wider_issues_tech_notes.html" },
     { name: "Sustainability", url: "notes_topics/notes_pages/wider_issues_tech_notes.html#Sustainability" },
@@ -544,7 +544,7 @@ const topics = [
     { name: "Scrum", url: "notes_topics/notes_pages/project_management_notes.html#Scrum" },
     { name: "Six Sigma", url: "notes_topics/notes_pages/project_management_notes.html#SixSigma" },
     //Project management systems^^^
-    { name: "Product life cycle", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html" },
+    { name: "Product life cycle (Sales)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html" },
     { name: "Introduction (Product life cycle)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html#Introduction" },
     { name: "Growth (Product life cycle)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html#Growth" },
     { name: "Maturity (Product life cycle)", url: "notes_topics/notes_pages/stages_of_a_products_life_cycle_notes.html#Maturity" },

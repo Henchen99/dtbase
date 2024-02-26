@@ -353,7 +353,7 @@ const questions = [
     { question: "Use", url: "../documents/Q&A/design_for_maintenance_and_cleaner_environment_exercises/products_life_cycle_Q&A.pdf" },
     { question: "Repair and maintenance", url: "../documents/Q&A/design_for_maintenance_and_cleaner_environment_exercises/products_life_cycle_Q&A.pdf" },
     { question: "End of life", url: "../documents/Q&A/design_for_maintenance_and_cleaner_environment_exercises/products_life_cycle_Q&A.pdf" },
-    { question: "Product Life Cycle", url: "../documents/Q&A/design_for_maintenance_and_cleaner_environment_exercises/products_life_cycle_Q&A.pdf" },
+    { question: "Product Life Cycle (Environmental)", url: "../documents/Q&A/design_for_maintenance_and_cleaner_environment_exercises/products_life_cycle_Q&A.pdf" },
     //Product Life Cycle
     { question: "Cost implications to the consumer and manufacturer", url: "../documents/Q&A/design_for_maintenance_and_cleaner_environment_exercises/Wider_issues_of_using_cleaner_technology_Q&A.pdf" },
     { question: "Sustainability", url: "../documents/Q&A/design_for_maintenance_and_cleaner_environment_exercises/Wider_issues_of_using_cleaner_technology_Q&A.pdf" },
@@ -393,7 +393,7 @@ const questions = [
     { question: "Scrum", url: "../documents/Q&A/further_processes_techniques_exercises/Project_management_Q&A.pdf" },
     { question: "Six Sigma", url: "../documents/Q&A/further_processes_techniques_exercises/Project_management_Q&A.pdf" },
     //Project management systems^^^
-    { question: "Product life cycle", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
+    { question: "Product life cycle (Sales)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
     { question: "Introduction (Product life cycle)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
     { question: "Growth (Product life cycle)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
     { question: "Maturity (Product life cycle)", url: "../documents/Q&A/further_processes_techniques_exercises/Stages_of_products_life_cycle_Q&A.pdf" },
