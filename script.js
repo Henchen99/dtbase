@@ -476,6 +476,7 @@ const topics = [
     { name: "Lean manufacturing using just-in-time (JIT) systems", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html#LeanManufacturingJITSystems" },
     { name: "Just-in-time (JIT)", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html#JustInTimeJIT" },
     { name: "Standardised parts", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html#StandardisedParts" },
+    { name: "Bought-in parts", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html#StandardisedParts" },
     { name: "Quick response manufacturing (QRM)", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html#QuickResponseManufacturingQRM" },
     { name: "Product data management (PDM)", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html#ProductDataManagementPDM" },
     { name: "Enterprise resource planning (ERP) systems", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html#EnterpriseResourcePlanningERPSystems" },

@@ -340,6 +340,7 @@ const questions = [
     { question: "Product focused cells", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
     { question: "Lean manufacturing using just-in-time (JIT) systems", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
     { question: "Just-in-time (JIT)", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
+    { question: "Bought-in parts", url: "notes_topics/notes_pages/modern_manufacturing_methods_notes.html#StandardisedParts" },
     { question: "Standardised parts", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
     { question: "Quick response manufacturing (QRM)", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
     { question: "Product data management (PDM)", url: "../documents/Q&A/features_of_manufacturing_industries/Modern%20manufacturing%20methods%20and%20systems_Q&A.pdf" },
