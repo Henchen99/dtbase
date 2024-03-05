@@ -735,7 +735,7 @@ hr {
     height: 3px;
     width: 100%;
     margin: 5px auto;
-    background-color: rgb(214, 214, 23);
+    background-color: rgb(0, 0, 0);
     border-radius: 10px;
     position: relative;
 }
@@ -777,7 +777,6 @@ hr {
 
 .pastpaper_dropdown{
     display: flex;
-    border-bottom: 2px solid rgb(185, 22, 22);
     font-size: large;
     flex-direction: column;
     align-items: flex-start;
@@ -819,7 +818,7 @@ hr {
     height: 3px;
     width: 100%;
     margin: 5px auto;
-    background-color: rgb(214, 214, 23);
+    background-color: rgb(0, 0, 0);
     border-radius: 10px;
     position: relative;
 }
