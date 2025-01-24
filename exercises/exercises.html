@@ -223,6 +223,34 @@
                     </div>
                 </div>
 
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(../images/random_questions.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="blurbox">
+                            <a href="#" onclick="redirectToRandomBooklet()">Random questions</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <script>
+                    // Array of question booklet URLs
+                    const booklets = [
+    "../../documents/Q&A/safe_working_practices_exercises/Adopting_safe_working_practices_Q&A.pdf"
+];
+
+
+
+
+                
+                    // Function to redirect the user to a random booklet
+                    function redirectToRandomBooklet() {
+                        const randomIndex = Math.floor(Math.random() * booklets.length); // Get a random index
+                        const randomBooklet = booklets[randomIndex]; // Get the corresponding booklet URL
+                        window.location.href = randomBooklet; // Redirect the user
+                    }
+                </script>
+                
+
             </div>
         </div>
    
