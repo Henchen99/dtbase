@@ -2,7 +2,7 @@
 const scriptPath = document.currentScript.src;
 const basePath = scriptPath.substring(0, scriptPath.lastIndexOf("/") + 1);
 
-// Dynamically inject the <head> content with proper paths
+// Inject the head content dynamically
 function injectHeadContent() {
     // Create a <title> element
     const title = document.createElement("title");
@@ -52,31 +52,43 @@ function injectHeadContent() {
     cookieScript.src = "https://cdn-cookieyes.com/client_data/bf66d40c1470575f392ed5d8/script.js";
     document.head.appendChild(cookieScript);
 
-    // Add Google Analytics with Consent Mode
+    // Add Google Analytics script
     const analyticsScript = document.createElement("script");
     analyticsScript.async = true;
     analyticsScript.src = "https://www.googletagmanager.com/gtag/js?id=G-YZG2YDGNFN";
     document.head.appendChild(analyticsScript);
 
+    // Add inline script for Google Consent Mode and Analytics
     const inlineAnalyticsScript = document.createElement("script");
     inlineAnalyticsScript.textContent = `
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
         // Set default consent state for Google Consent Mode
         gtag('consent', 'default', {
             'ad_storage': 'denied',
-            'analytics_storage': 'denied'
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied',
+            'functionality_storage': 'denied',
+            'personalization_storage': 'denied',
+            'security_storage': 'granted',
+            'wait_for_update': 2000
         });
 
+        // Enable additional privacy features
+        gtag('set', 'ads_data_redaction', true);
+        gtag('set', 'url_passthrough', true);
+
         // Initialize Google Analytics
+        gtag('js', new Date());
         gtag('config', 'G-YZG2YDGNFN');
-        gtag('config', 'AW-11234376367');
     `;
     document.head.appendChild(inlineAnalyticsScript);
 
-    // Add Google AdSense
+    // Add Google AdSense script
     const adsenseScript = document.createElement("script");
     adsenseScript.async = true;
     adsenseScript.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5114036939976193";
@@ -84,34 +96,36 @@ function injectHeadContent() {
     document.head.appendChild(adsenseScript);
 }
 
-// Hide body initially
+// Hide the body initially for a smooth fade-in effect
 function hideBody() {
     document.body.style.visibility = "hidden";
     document.body.style.opacity = "0";
 }
 
-// Reveal body after everything is loaded
+// Reveal the body after all resources have loaded
 function revealBody() {
     document.body.style.visibility = "visible";
     document.body.style.opacity = "1";
-    document.body.style.transition = "opacity 0.5s ease"; // Optional: Smooth fade-in
+    document.body.style.transition = "opacity 0.5s ease"; // Smooth fade-in
 }
 
 // Listen for CookieYes consent updates
 function handleConsentUpdates() {
     document.addEventListener('cookieyes-consent-update', function () {
-        const consentedCategories = CookieYes.consent; // Fetch consented categories
+        const consentedCategories = CookieYes.consent; // Get consented categories
         if (consentedCategories.includes('analytics')) {
-            // Update Google Consent Mode to allow analytics
+            // Update Google Consent Mode for granted analytics
             gtag('consent', 'update', {
                 'ad_storage': 'granted',
-                'analytics_storage': 'granted'
+                'analytics_storage': 'granted',
+                'personalization_storage': 'granted'
             });
         } else {
-            // Revoke consent for analytics
+            // Revoke analytics consent
             gtag('consent', 'update', {
                 'ad_storage': 'denied',
-                'analytics_storage': 'denied'
+                'analytics_storage': 'denied',
+                'personalization_storage': 'denied'
             });
         }
     });
