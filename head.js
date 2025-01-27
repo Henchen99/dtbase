@@ -52,7 +52,7 @@ function injectHeadContent() {
     cookieScript.src = "https://cdn-cookieyes.com/client_data/bf66d40c1470575f392ed5d8/script.js";
     document.head.appendChild(cookieScript);
 
-    // Add Google Analytics
+    // Add Google Analytics with Consent Mode
     const analyticsScript = document.createElement("script");
     analyticsScript.async = true;
     analyticsScript.src = "https://www.googletagmanager.com/gtag/js?id=G-YZG2YDGNFN";
@@ -63,6 +63,14 @@ function injectHeadContent() {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
+
+        // Set default consent state for Google Consent Mode
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied'
+        });
+
+        // Initialize Google Analytics
         gtag('config', 'G-YZG2YDGNFN');
         gtag('config', 'AW-11234376367');
     `;
@@ -89,7 +97,28 @@ function revealBody() {
     document.body.style.transition = "opacity 0.5s ease"; // Optional: Smooth fade-in
 }
 
+// Listen for CookieYes consent updates
+function handleConsentUpdates() {
+    document.addEventListener('cookieyes-consent-update', function () {
+        const consentedCategories = CookieYes.consent; // Fetch consented categories
+        if (consentedCategories.includes('analytics')) {
+            // Update Google Consent Mode to allow analytics
+            gtag('consent', 'update', {
+                'ad_storage': 'granted',
+                'analytics_storage': 'granted'
+            });
+        } else {
+            // Revoke consent for analytics
+            gtag('consent', 'update', {
+                'ad_storage': 'denied',
+                'analytics_storage': 'denied'
+            });
+        }
+    });
+}
+
 // Main execution
 hideBody();
 injectHeadContent();
+handleConsentUpdates();
 window.addEventListener("load", revealBody);
