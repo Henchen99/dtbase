@@ -68,23 +68,22 @@ function injectHeadContent() {
 
         // Set default consent state for Google Consent Mode
         gtag('consent', 'default', {
-            'ad_storage': 'denied',
-            'ad_user_data': 'denied',
-            'ad_personalization': 'denied',
-            'analytics_storage': 'denied',
-            'functionality_storage': 'denied',
-            'personalization_storage': 'denied',
-            'security_storage': 'granted',
-            'wait_for_update': 2000
+            'ad_storage': 'denied',          // Disable ad cookies
+            'analytics_storage': 'denied',  // Disable analytics cookies
+            'wait_for_update': 2000         // Allow delay for updates
         });
 
-        // Enable additional privacy features
+        // Enable privacy-friendly features
         gtag('set', 'ads_data_redaction', true);
         gtag('set', 'url_passthrough', true);
 
-        // Initialize Google Analytics
+        // Initialize Google Analytics (track anonymized page views)
         gtag('js', new Date());
-        gtag('config', 'G-YZG2YDGNFN');
+        gtag('config', 'G-YZG2YDGNFN', {
+            'anonymize_ip': true,                  // Anonymize IP addresses
+            'allow_google_signals': false,        // Disable ad personalization signals
+            'allow_ad_personalization_signals': false // No personalized ads
+        });
     `;
     document.head.appendChild(inlineAnalyticsScript);
 
@@ -121,7 +120,7 @@ function handleConsentUpdates() {
                 'personalization_storage': 'granted'
             });
         } else {
-            // Revoke analytics consent
+            // Maintain anonymized tracking for denied cookies
             gtag('consent', 'update', {
                 'ad_storage': 'denied',
                 'analytics_storage': 'denied',
