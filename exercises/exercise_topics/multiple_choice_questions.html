@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="/head.js" defer></script>
+    </head>
+<body>
+    <div class="container">  
+        <header>
+            <div class="Logo">
+                <img class="logo" src="../../images/Logo.png" alt="DesignandTechBase Logo">
+            </div>
+            <div class="toggle"></div>
+            <div class="navigation">
+
+                <a href="#" class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+
+                <div class="nav-link-wrapper">
+                    <a href="../../index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="../../tutoring.html">Tutoring</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="../../notes/notes.html">Notes</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="../../exercises/exercises.html">Questions</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="../../pastpapers/pastpapers.html">Past Papers</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="../../coursework/coursework.html">Coursework</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="../../contact.html">Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <h1>Multiple Choice Questions</h1>
+            <div id="quiz-container">
+                <!-- Questions will be dynamically inserted here -->
+            </div>
+            <style>
+                                     
+                /* Center the quiz */
+                #quiz-container {
+                    max-width: 600px;
+                    margin: 20px auto;
+                    padding: 20px;
+                    background: #fff;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                }
+        
+                /* Question styling */
+                .question {
+                    margin-bottom: 15px;
+                    padding: 10px;
+                    border-radius: 5px;
+                    background: #ffffff;
+                    border: 1px solid #ddd;
+                }
+        
+                /* Styling for labels (answers) */
+                label {
+                    display: block;
+                    padding: 8px;
+                    border-radius: 4px;
+                    transition: 0.3s;
+                    cursor: pointer;
+                }
+
+                .option-label {
+                    display: block;
+                    padding: 8px;
+                    border-radius: 4px;
+                    transition: 0.3s;
+                    cursor: pointer;
+                }
+            
+                .option-label:hover {
+                    background: #f1f1f1;
+                }
+        
+                label:hover {
+                    background: #f1f1f1;
+                }
+        
+                /* Radio button styling */
+                input[type="radio"] {
+                    margin-right: 10px;
+                }
+        
+                /* Submit Button */
+                #submit-btn {
+                    display: block;
+                    width: 100%;
+                    background: #d9534f;
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    font-size: 16px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: 0.3s;
+                }
+        
+                #submit-btn:hover {
+                    background: #c9302c;
+                }
+        
+                /* Result styling */
+                #result-container {
+                    margin-top: 20px;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+            </style>
+            <button id="submit-btn" style="display: none;">Submit</button>
+            <button id="refresh-btn" style="display: none;">Refresh Questions</button>
+            <div id="result-container" style="display: none;">
+                <h2>Your Results:</h2>
+                <p id="result-text"></p>
+            </div>
+        </main>
+        
+        <script src="../../multiple_choice_questions.js" defer></script>
+        
+        
+
+        <div class="footer">
+            <div class="footer-content">
+               <p><strong> Email: designtechbase@gmail.com | DTBase</strong></p>
+            </div>
+            <div class="footer-bottom">
+                | &copy; DTBase.com | Designed by Henry Chen and Will Stevens | <br><br>| <div class="tutor_btn"><a href="../../legal_notice.html">Legal Notice & Privacy Policy</a> | </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
