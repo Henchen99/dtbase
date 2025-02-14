@@ -12,6 +12,19 @@
 // toggleButton.addEventListener('click', () => {
 //   navbarLinks.classList.toggle('active')
 // })
+window.onscroll = function() {
+    var button = document.getElementById("scrollToTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+    }
+};
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
 
 
 const toggleButton = document.getElementsByClassName('hamburger')[0];
