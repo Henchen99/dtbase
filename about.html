@@ -4,6 +4,54 @@
     <script src="/head.js" defer></script>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <title>About Us | DesignandTechBase</title>
+    <style>
+        .meet-the-team {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+    
+        .team-member {
+            display: inline-block;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin: 20px;
+            max-width: 300px;
+        }
+    
+        .team-member:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+    
+        .team-member img {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            border-radius: 50%;
+            border: 5px solid #0073e6; /* Adjust to match your theme */
+            transition: transform 0.3s ease;
+        }
+    
+        .team-member img:hover {
+            transform: rotate(5deg) scale(1.1);
+        }
+    
+        .team-member h3 {
+            font-size: 1.5em;
+            margin-top: 10px;
+            color: #333;
+        }
+    
+        .team-member p {
+            font-size: 1em;
+            color: #555;
+        }
+    </style>
+    
 </head>
 <body>
     <div class="container">  
@@ -49,7 +97,7 @@
         <div class="meet-the-team">
             <h2>Meet The Team</h2>
             <div class="team-member">
-                <img src="images/will_stevens.jpg" alt="Will Stevens">
+                <img src="images/will_stevens.png" alt="Will Stevens">
                 <h3>Will Stevens</h3>
                 <p>Co-founder & Content Developer</p>
                 <p>Will is an MSc Energy Systems and Data Analytics student at UCL, passionate about education and making high-quality learning resources accessible.</p>
