@@ -255,7 +255,7 @@ const allQuestions = [
     { question: "What is a cost that is not accounted for when budgeting a project?", options: ["Staff hours", "Machinery costs", "Unplanned expenses"], answer: "Unplanned expenses" },
     { question: "When planning for a project budget why is it important to know the scale of production being used?", options: ["So the cost of manufacturing can be estimated", "So the machinery needed can be ordered in time", "So the timescale of the project is known"], answer: "So the cost of manufacturing can be estimated" },
     { question: "Which scale of production will have the highest set up costs?", options: ["One-off production", "Batch production", "Mass production"], answer: "One-off production" },
-    { question: "Modelling the cost of projects such as car manufacturing can be done completely by CAD software", options: ["True", "True"], answer: "True" },
+    { question: "Modelling the cost of projects such as car manufacturing can be done completely by CAD software", options: ["True", "False"], answer: "True" },
 
     { question: "What government office grants Patents?", options: ["Intellectual property office", "International property office", "Intellectual property organisation"], answer: "Intellectual property office" },
     { question: "How long does a patent last?", options: ["30 years", "20 years", "70 years"], answer: "20 years" },
