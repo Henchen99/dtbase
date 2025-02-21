@@ -3,6 +3,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 9999; /* Ensures it is on top of everything */
     display: none; /* Hidden by default */
     background-color: #007bff;
     color: white;
