@@ -5,6 +5,20 @@
     </head>
 
 <body>
+    <style>
+        body {
+          visibility: hidden;
+          opacity: 0;
+          transition: opacity 0.5s ease; /* Smooth fade-in */
+        }
+      </style>
+      
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          document.body.style.visibility = "visible";
+          document.body.style.opacity = "1";
+        });
+      </script>
     <div class="containter">  
         <header>
             <div class="Logo">
