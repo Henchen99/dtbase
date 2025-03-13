@@ -1,17 +1,5 @@
-// const hamburgers = document.getElementsByClassName('hamburger')[0];
-// const nav_link_wrapper = document.getElementsByName('nav-link-wrapper')[0];
+document.addEventListener('DOMContentLoaded', function() {
 
-// hamburgers.addEventListener('click', () => {
-//     nav_link_wrapper.classList.toggle('active');
-// })
-
-
-// const toggleButton = document.getElementsByClassName('hamburger')[0]
-// const navbarLinks = document.getElementsByClassName('nav-link-wrapper')[0]
-
-// toggleButton.addEventListener('click', () => {
-//   navbarLinks.classList.toggle('active')
-// })
 window.onscroll = function() {
     var button = document.getElementById("scrollToTopBtn");
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -122,7 +110,7 @@ toggleArrows.forEach((toggleArrow) => {
 
 // Define your topics and their corresponding URLs
 const topics = [
-    { name: 'Woods', url: 'notes_topics/notes_pages/woods_materials_notes.html' },
+    { name: 'Woods', url: '/woods_materials_notes.html' },
     { name: 'Timbers', url: 'notes_topics/notes_pages/woods_materials_notes.html' },
     { name: 'Hardwoods', url: 'notes_topics/notes_pages/woods_materials_notes.html#Hardwoods' },
     { name: 'Softwoods', url: 'notes_topics/notes_pages/woods_materials_notes.html#Softwoods' },
@@ -646,4 +634,6 @@ document.addEventListener('keydown', function(event) {
             window.location.href = topResult.dataset.url;
         }
     }
+});
+
 });
