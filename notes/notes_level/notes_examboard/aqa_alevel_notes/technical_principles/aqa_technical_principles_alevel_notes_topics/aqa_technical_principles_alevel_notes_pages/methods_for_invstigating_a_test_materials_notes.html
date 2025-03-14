@@ -2,49 +2,142 @@
 <html lang="en">
     <head>
         <script src="/head.js" defer></script>
+        <style>
+            /* Apply light grey background with 0.5 transparency to columns 1 and 3 */
+            .notes-table-data-pro:nth-child(1), .notes-table-data-pro:nth-child(3) {
+                background-color: rgba(169, 169, 169, 0.5); /* light grey with 0.5 transparency */
+            }
+
+            /* Apply grey background with 0.5 transparency to row headers (th) */
+            .notes-table-header th {
+                background-color: rgba(169, 169, 169, 0.5); /* grey with 0.5 transparency */
+            }
+
+            .notes-table-data-pro {
+                background-color: white; /* Keep content cells white */
+            }
+
+            .notes-table-data-pro ul {
+                margin: 0;
+            }
+        </style>
     </head>
 
-<body>
-    <div class="containter"> 
-        <div class="quote">
-            <h2>Safe Working Practices</h2>
-        </div>
-        <div class="content-wrapper">
-            <div class="portfolio-items-wrapper-notes_single">
+    <body>
+        <div class="containter"> 
+            <div class="notes-content-wrapper">
+                <div class="notes-content-header" style="background-image:url(/images/PTST/PTST_note_heattreatment.jpg)" title="heat treatment background">
+                    <h1 style="color:white"><u><b>Methods for investigating and testing materials</b></u></h1>
+                </div>
+    
+                <div class="notes-content">
+                    <div class="notes-content-intro">
+                    </div>
 
-                <div class="portfolio-item-wrapper-notes">
-                    <div class="portfolio-img-background-notes" style="background-image:url(../../../../../../../images/safeWorkingPractice.jpg)"></div>
-                    <div class="img-text-wrapper-notes">
-                        <div class="blurbox">
-                            <a href="notes_pages\safe_working_notes.html">Materials and their applications</a>
+                    <h3 id="MaterialTesting"><b><u>Methods for Investigating and Testing Materials:</u></b></h3>
+
+                    <h3>
+
+                        <p><b>Overview:</b></p>
+                        <p>Materials are tested to evaluate their mechanical and physical properties. These tests are used in both workshop and industrial settings to measure various characteristics of materials, including their strength, toughness, hardness, malleability, corrosion resistance, and conductivity.</p>
+                
+                        <p><b>Common Tests and How They Work:</b></p>
+                
+                        <ul>
+                            <ol><li><b>Tensile Strength Test:</b> Measures how much force a material can withstand before breaking or stretching. Typically conducted with a universal testing machine (UTM).</li></ol>
+                            <ol><li><b>Toughness Test:</b> Assesses the material's ability to absorb energy before fracturing. Often measured by impact tests, such as the Charpy test.</li></ol>
+                            <ol><li><b>Hardness Test:</b> Determines the material's resistance to indentation or scratching. Common tests include the Brinell, Rockwell, and Vickers hardness tests.</li></ol>
+                            <ol><li><b>Malleability Test:</b> Evaluates how easily a material can be shaped or deformed without breaking. This is typically tested by bending or hammering a sample.</li></ol>
+                            <ol><li><b>Corrosion Test:</b> Measures how materials degrade when exposed to different environmental factors such as moisture, salts, and chemicals. Can involve salt spray tests or accelerated aging tests.</li></ol>
+                            <ol><li><b>Conductivity Test:</b> Measures the material's ability to conduct electricity or heat. Electrical conductivity is tested using a multimeter, and thermal conductivity is evaluated with various heat flow techniques.</li></ol>
+                        </ul><br>
+
+                        <p><b>Specific Testing Methods:</b></p>
+
+                        <table>
+                            <tr class="notes-table-header">
+                                <th>Test Type</th>
+                                <th>How It Works</th>
+                                <th>Advantages</th>
+                            </tr>
+                            <tr>
+                                <td class="notes-table-data-pro">
+                                    <ul>
+                                        <b>Brinell Hardness Test</b>
+                                    </ul>
+                                </td>
+                                <td class="notes-table-data-pro">
+                                    <ul>
+                                        <li>A hard steel or carbide ball is pressed into the material's surface with a specific force.</li>
+                                        <li>The diameter of the indentation left in the material is measured, and the Brinell hardness number is calculated.</li>
+                                    </ul>
+                                </td>
+                                <td class="notes-table-data-pro">
+                                    <ul>
+                                        <li>Ideal for testing rougher materials and large components.</li>
+                                        <li>Simple to perform and inexpensive.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="notes-table-data-pro">
+                                    <ul>
+                                        <b>Vickers Hardness Test</b>
+                                    </ul>
+                                </td>
+                                <td class="notes-table-data-pro">
+                                    <ul>
+                                        <li>A diamond pyramid indenter is pressed into the material's surface.</li>
+                                        <li>The size of the indentation is measured under a microscope, and the Vickers hardness number is calculated.</li>
+                                    </ul>
+                                </td>
+                                <td class="notes-table-data-pro">
+                                    <ul>
+                                        <li>Works well for both soft and hard materials, providing more precise results.</li>
+                                        <li>Suitable for thin materials and coatings.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="notes-table-data-pro">
+                                    <ul>
+                                        <b>Rockwell Hardness Test</b>
+                                    </ul>
+                                </td>
+                                <td class="notes-table-data-pro">
+                                    <ul>
+                                        <li>A diamond cone or steel ball is used to penetrate the material, and the depth of the indentation is measured.</li>
+                                        <li>There are different scales for different materials (e.g., HRB for softer materials, HRC for harder materials).</li>
+                                    </ul>
+                                </td>
+                                <td class="notes-table-data-pro">
+                                    <ul>
+                                        <li>Quick and reliable with no need for measurements under a microscope.</li>
+                                        <li>Widely used in industrial settings.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <h3><b>Uses:</b> These tests are used in industries like manufacturing, automotive, aerospace, and construction to ensure that materials meet required specifications for their intended use. Understanding these properties helps engineers design safe and efficient products.</h3>
+
+                    </h3>
+
+                    <div class="notes-content">
+                        <div class="notes-content-intro">
+
+                            <h3><b>Topic test:</b></h3>
+
+                            <!-- This is a comment div class="blurbox" style="background-color: #bdbdbd;">
+                                <a href="\documents\Q&A\processes_techniques_special_tools_exercises\&A.pdf">Metal processes Questions</a>
+                            </div> -->
                         </div>
                     </div>
+
+                    <script src="/footer.js"></script>
+
                 </div>
-
-                <div class="portfolio-item-wrapper-notes">
-                    <div class="portfolio-img-background-notes" style="background-image:url(../../../../../../../images/safeWorkingPractice.jpg)"></div>
-                    <div class="img-text-wrapper-notes">
-                        <div class="blurbox">
-                            <a href="notes_pages\safe_working_notes.html">Classification of materials</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item-wrapper-notes">
-                    <div class="portfolio-img-background-notes" style="background-image:url(../../../../../../../images/safeWorkingPractice.jpg)"></div>
-                    <div class="img-text-wrapper-notes">
-                        <div class="blurbox">
-                            <a href="notes_pages\safe_working_notes.html">Methods for investigating and testing materials</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <script src="../../../../../../../footer.js"></script>
-    </div>
-    <button id="scrollToTopBtn" onclick="scrollToTop()">↑ Scroll To Top</button>
-</body>
-<script src="../../../../../../../script.js"></script>
-</html>
+                <button id="scrollToTopBtn" onclick="scrollToTop()">↑ Scroll To Top</button>
+            </body>
+        <script src="/script.js"></script>
+    </html>
