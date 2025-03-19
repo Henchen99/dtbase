@@ -1,34 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
 
-    // Show or hide the scroll to top button based on scroll position
-    window.onscroll = function() {
-        var button = document.getElementById("scrollToTopBtn");
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-            button.style.display = "block";
-        } else {
-            button.style.display = "none";
-        }
-    };
-
-    // Define the scrollToTop function
-    function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-
-    // Bind the scrollToTop function to the button click event
-    var button = document.getElementById("scrollToTopBtn");
-    button.onclick = scrollToTop;
-
-    // Hamburger menu toggle
-    const toggleButton = document.getElementsByClassName('hamburger')[0];
-    const navbarLinks = document.querySelectorAll('.nav-link-wrapper');
-
-    toggleButton.addEventListener('click', () => {
-        toggleButton.classList.toggle('active');
-        navbarLinks.forEach((it) => {
-            it.classList.toggle('active');
-        });
-    });
 
 // Define your topics and their corresponding URLs
 const topics = [
@@ -497,65 +467,121 @@ const topics = [
     { name: "Probability (Maths)", url: "https://designandtechbase.com/notes/notes_level/notes_examboard/edexcel_alevel_notes/notes_topics/notes_pages/maths_statistics.html#Stats" },
 
 ];
+// Show or hide the scroll to top button based on scroll position
+window.onscroll = function() {
+    var button = document.getElementById("scrollToTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+    }
+};
 
-// Function to perform search and display multiple matches for selection
+// Define the scrollToTop function
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+// Bind the scrollToTop function to the button click event
+var button = document.getElementById("scrollToTopBtn");
+button.onclick = scrollToTop;
+
+// Hamburger menu toggle
+const toggleButton = document.getElementsByClassName('hamburger')[0];
+const navbarLinks = document.querySelectorAll('.nav-link-wrapper');
+
+toggleButton.addEventListener('click', () => {
+    toggleButton.classList.toggle('active');
+    navbarLinks.forEach((it) => {
+        it.classList.toggle('active');
+    });
+});
+
+
+
+
+
+
+
+
+
+
+// Function to perform search and display results
 function search() {
-    const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
+    const searchInput = document.getElementById('searchInput');
+    const resultsContainer = document.getElementById('searchResults');
 
-    // Check if the search input is empty
-    if (searchInput === '') {
-        // Clear search results container
-        document.getElementById('searchResults').innerHTML = '';
-        return; // Exit the function if the search input is empty
+    if (!searchInput || !resultsContainer) {
+        console.error("Search input or results container not found.");
+        return;
     }
 
-    // Check if the search input matches any of the topics
-    const matchedTopics = topics.filter(topic =>
-        topic.name.toLowerCase().includes(searchInput)
-    );
+    const searchTerm = searchInput.value.trim().toLowerCase();
+    resultsContainer.innerHTML = ''; // Clear previous results
 
-    const resultsContainer = document.getElementById('searchResults');
-    resultsContainer.innerHTML = ''; // Clear previous search results
+    if (searchTerm === '') {
+        resultsContainer.style.display = 'none'; // Hide dropdown if input is empty
+        return;
+    }
+
+    // Filter topics that match the search input
+    const matchedTopics = topics.filter(topic => {
+        if (topic.name && typeof topic.name === 'string') {
+            return topic.name.toLowerCase().includes(searchTerm);
+        }
+        return false; // Skip topics with invalid or missing names
+    });
 
     if (matchedTopics.length > 0) {
-        // Display the first 10 matched topics for selection
-        for (let i = 0; i < Math.min(matchedTopics.length, 10); i++) {
-            const resultItem = document.createElement('li');
-            resultItem.textContent = matchedTopics[i].name;
+        matchedTopics.slice(0, 10).forEach(topic => {
+            const resultItem = document.createElement('div');
+            resultItem.textContent = topic.name;
             resultItem.classList.add('search-result-item');
-            resultItem.dataset.url = matchedTopics[i].url; // Store URL as data attribute
+            resultItem.dataset.url = topic.url;
             resultsContainer.appendChild(resultItem);
-        }
+        });
+        resultsContainer.style.display = 'block'; // Show dropdown
     } else {
-        // Handle case where no match is found
-        resultsContainer.innerHTML = '<li>No matching topic found.</li>';
+        resultsContainer.innerHTML = '<div class="search-result-item">No matching topics found.</div>';
+        resultsContainer.style.display = 'block'; // Show dropdown
     }
 }
 
-// Add event listener to handle input changes in the search input field
-document.getElementById('searchInput').addEventListener('input', search);
+// Add event listeners after the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchInput');
+    const searchButton = document.getElementById('searchButton');
+    const searchResults = document.getElementById('searchResults');
 
-// Add event listener to handle click on search result items
-document.getElementById('searchResults').addEventListener('click', function(event) {
-    const clickedItem = event.target;
-    if (clickedItem.classList.contains('search-result-item')) {
-        window.location.href = clickedItem.dataset.url;
-
-        // Scroll down by half a screen length after a brief delay (50 milliseconds)
-        setTimeout(() => {
-            window.scrollBy(0, window.innerHeight / 2);
-        }, 50);
+    if (!searchInput || !searchButton || !searchResults) {
+        console.error("One or more elements not found.");
+        return;
     }
-});
 
-// Handle the Enter key to go to the first result
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
-        const topResult = document.querySelector('.search-result-item');
-        if (topResult) {
-            window.location.href = topResult.dataset.url;
+    // Add event listener to the search input for real-time search
+    searchInput.addEventListener('input', search);
+
+    // Add event listener to the search button
+    searchButton.addEventListener('click', search);
+
+    // Add event listener to handle clicks on search results
+    searchResults.addEventListener('click', function(event) {
+        const clickedItem = event.target;
+        if (clickedItem.classList.contains('search-result-item')) {
+            const url = clickedItem.dataset.url;
+            if (url) {
+                window.location.href = url; // Navigate to the URL
+            } else {
+                console.error("No URL found for this topic.");
+            }
         }
-    }
-});
+    });
 
+    // Hide dropdown when clicking outside
+    document.addEventListener('click', function(event) {
+        const searchContainer = document.querySelector('.search-container');
+        if (!searchContainer.contains(event.target)) {
+            searchResults.style.display = 'none'; // Hide dropdown
+        }
+    });
 });
