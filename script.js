@@ -32,14 +32,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Define your topics and their corresponding URLs
 const topics = [
-    { name: 'Woods', url: 'https://designandtechbase.com/notes/notes_level/notes_examboard/edexcel_alevel_notes/notes_topics/notes_pages/woods_materials_notes.html' },
-    { name: 'Timbers', url: 'https://designandtechbase.com/notes/notes_level/notes_examboard/edexcel_alevel_notes/notes_topics/notes_pages/woods_materials_notes.html' },
-    { name: 'Hardwoods', url: 'https://designandtechbase.com/notes/notes_level/notes_examboard/edexcel_alevel_notes/notes_topics/notes_pages/woods_materials_notes.html#Hardwoods' },
-    { name: 'Softwoods', url: 'https://designandtechbase.com/notes/notes_level/notes_examboard/edexcel_alevel_notes/notes_topics/notes_pages/woods_materials_notes.html#Softwoods' },
-    { name: 'Manufactured Boards', url: 'https://designandtechbase.com/notes/notes_level/notes_examboard/edexcel_alevel_notes/notes_topics/notes_pages/woods_materials_notes.html#ManufacturedBoards' },
-    { name: 'Oak', url: 'https://designandtechbase.com/notes/notes_level/notes_examboard/edexcel_alevel_notes/notes_topics/notes_pages/woods_materials_notes.html#Oak' },
-    { name: 'Mahogany', url: 'https://designandtechbase.com/notes/notes_level/notes_examboard/edexcel_alevel_notes/notes_topics/notes_pages/woods_materials_notes.html#Mahogany' },
-    { name: 'Beech', url: 'https://designandtechbase.com/notes/notes_level/notes_examboard/edexcel_alevel_notes/notes_topics/notes_pages/woods_materials_notes.html#Beech' },
+    { name: 'Woods (Edexcel A-Level)', url: 'https://designandtechbase.com/notes/notes_level/notes_examboard/edexcel_alevel_notes/notes_topics/notes_pages/woods_materials_notes.html' },
+    { name: 'Timbers (Edexcel A-Level)', url: 'https://designandtechbase.com/notes/notes_level/notes_examboard/edexcel_alevel_notes/notes_topics/notes_pages/woods_materials_notes.html' },
+    { name: 'Hardwoods (Edexcel A-Level)', url: 'https://designandtechbase.com/notes/notes_level/notes_examboard/edexcel_alevel_notes/notes_topics/notes_pages/woods_materials_notes.html#Hardwoods' },
+    { name: 'Softwoods (Edexcel A-Level)', url: 'https://designandtechbase.com/notes/notes_level/notes_examboard/edexcel_alevel_notes/notes_topics/notes_pages/woods_materials_notes.html#Softwoods' },
+    { name: 'Manufactured Boards (Edexcel A-Level)', url: 'https://designandtechbase.com/notes/notes_level/notes_examboard/edexcel_alevel_notes/notes_topics/notes_pages/woods_materials_notes.html#ManufacturedBoards' },
+    { name: 'Oak (Edexcel A-Level)', url: 'https://designandtechbase.com/notes/notes_level/notes_examboard/edexcel_alevel_notes/notes_topics/notes_pages/woods_materials_notes.html#Oak' },
+    { name: 'Mahogany (Edexcel A-Level)', url: 'https://designandtechbase.com/notes/notes_level/notes_examboard/edexcel_alevel_notes/notes_topics/notes_pages/woods_materials_notes.html#Mahogany' },
+    { name: 'Beech (Edexcel A-Level)', url: 'https://designandtechbase.com/notes/notes_level/notes_examboard/edexcel_alevel_notes/notes_topics/notes_pages/woods_materials_notes.html#Beech' },
     { name: 'Jelutong', url: 'https://designandtechbase.com/notes/notes_level/notes_examboard/edexcel_alevel_notes/notes_topics/notes_pages/woods_materials_notes.html#Jelutong' },
     { name: 'Balsa', url: 'https://designandtechbase.com/notes/notes_level/notes_examboard/edexcel_alevel_notes/notes_topics/notes_pages/woods_materials_notes.html#Balsa' },
     { name: 'Pine', url: 'https://designandtechbase.com/notes/notes_level/notes_examboard/edexcel_alevel_notes/notes_topics/notes_pages/woods_materials_notes.html#Pine' },
