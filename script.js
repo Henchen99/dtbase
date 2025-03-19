@@ -1,34 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-
-    // Show or hide the scroll to top button based on scroll position
-    window.onscroll = function() {
-        var button = document.getElementById("scrollToTopBtn");
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-            button.style.display = "block";
-        } else {
-            button.style.display = "none";
-        }
-    };
-
-    // Define the scrollToTop function
-    function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-
-    // Bind the scrollToTop function to the button click event
-    var button = document.getElementById("scrollToTopBtn");
-    button.onclick = scrollToTop;
-
-    // Hamburger menu toggle
-    const toggleButton = document.getElementsByClassName('hamburger')[0];
-    const navbarLinks = document.querySelectorAll('.nav-link-wrapper');
-
-    toggleButton.addEventListener('click', () => {
-        toggleButton.classList.toggle('active');
-        navbarLinks.forEach((it) => {
-            it.classList.toggle('active');
-        });
-    });
 
 // Define your topics and their corresponding URLs
 const topics = [
@@ -498,154 +467,122 @@ const topics = [
 
 ];
 
-// Function to perform search and display multiple matches for selection
-function search() {
-    const searchInput = document.getElementById('searchInput');
-    const resultsContainer = document.getElementById('searchResults');
+document.addEventListener('DOMContentLoaded', function () {
 
-    if (!searchInput || !resultsContainer) {
-        console.error("Search input or results container not found.");
-        return;
-    }
-
-    const searchTerm = searchInput.value.trim().toLowerCase();
-    resultsContainer.innerHTML = ''; // Clear previous results
-
-    if (searchTerm === '') {
-        resultsContainer.style.display = 'none'; // Hide dropdown if input is empty
-        return;
-    }
-
-    // Filter topics that match the search input
-    const matchedTopics = topics.filter(topic => {
-        if (topic.name && typeof topic.name === 'string') {
-            return topic.name.toLowerCase().includes(searchTerm);
+    // Show or hide the scroll-to-top button based on scroll position
+    window.onscroll = function () {
+        var button = document.getElementById("scrollToTopBtn");
+        if (!button) return;
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
         }
-        return false; // Skip topics with invalid or missing names
+    };
+
+    // Scroll to top function
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    // Bind scroll to top function to the button click event
+    var button = document.getElementById("scrollToTopBtn");
+    if (button) {
+        button.onclick = scrollToTop;
+    }
+
+    // Hamburger menu toggle
+    const toggleButton = document.querySelector('.hamburger');
+    const navbarLinks = document.querySelectorAll('.nav-link-wrapper');
+
+    if (toggleButton) {
+        toggleButton.addEventListener('click', () => {
+            toggleButton.classList.toggle('active');
+            navbarLinks.forEach((it) => it.classList.toggle('active'));
+        });
+    }
+
+    // Search function
+    function search() {
+        const searchInput = document.getElementById('searchInput');
+        const resultsContainer = document.getElementById('searchResults');
+
+        if (!searchInput || !resultsContainer) {
+            console.error("Search input or results container not found.");
+            return;
+        }
+
+        const searchTerm = searchInput.value.trim().toLowerCase();
+        resultsContainer.innerHTML = ''; // Clear previous results
+
+        if (searchTerm === '') {
+            resultsContainer.style.display = 'none'; // Hide dropdown if input is empty
+            return;
+        }
+
+        // Check if topics array is defined
+        if (typeof topics === 'undefined' || !Array.isArray(topics)) {
+            console.error("Topics array is not defined.");
+            return;
+        }
+
+        // Filter topics that match the search input
+        const matchedTopics = topics.filter(topic => {
+            return topic.name && typeof topic.name === 'string' && topic.name.toLowerCase().includes(searchTerm);
+        });
+
+        if (matchedTopics.length > 0) {
+            matchedTopics.slice(0, 10).forEach(topic => {
+                const resultItem = document.createElement('li');
+                resultItem.textContent = topic.name;
+                resultItem.classList.add('search-result-item');
+                resultItem.dataset.url = topic.url;
+                resultsContainer.appendChild(resultItem);
+            });
+            resultsContainer.style.display = 'block'; // Show results
+        } else {
+            resultsContainer.innerHTML = '<li>No matching topics found.</li>';
+            resultsContainer.style.display = 'block';
+        }
+    }
+
+    // Add event listener for search input (real-time search)
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.addEventListener('input', search);
+    }
+
+    // Add event listener for search button
+    const searchButton = document.getElementById('searchButton');
+    if (searchButton) {
+        searchButton.addEventListener('click', search);
+    }
+
+    // Handle click on search result items
+    const resultsContainer = document.getElementById('searchResults');
+    if (resultsContainer) {
+        resultsContainer.addEventListener('click', function (event) {
+            const clickedItem = event.target;
+            if (clickedItem.classList.contains('search-result-item')) {
+                window.location.href = clickedItem.dataset.url;
+
+                // Scroll down by half a screen after a brief delay
+                setTimeout(() => {
+                    window.scrollBy(0, window.innerHeight / 2);
+                }, 50);
+            }
+        });
+    }
+
+    // Handle the Enter key to go to the first result
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            const topResult = document.querySelector('.search-result-item');
+            if (topResult) {
+                window.location.href = topResult.dataset.url;
+            }
+        }
     });
 
-    if (matchedTopics.length > 0) {
-        matchedTopics.slice(0, 10).forEach(topic => {
-            const resultItem = document.createElement('div');
-            resultItem.textContent = topic.name;
-            resultItem.classList.add('search-result-item');
-            resultItem.dataset.url = topic.url;
-            resultsContainer.appendChild(resultItem);
-        });
-        resultsContainer.style.display = 'block'; // Show dropdown
-    } else {
-        resultsContainer.innerHTML = '<div class="search-result-item">No matching topics found.</div>';
-        resultsContainer.style.display = 'block'; // Show dropdown
-    }
-}
-
-
-// Function to perform search and display multiple matches for selection
-function search() {
-    const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
-
-    // Check if the search input is empty
-    if (searchInput === '') {
-        // Clear search results container
-        document.getElementById('searchResults').innerHTML = '';
-        return; // Exit the function if the search input is empty
-    }
-
-    // Check if the search input matches any of the topics
-    const matchedTopics = topics.filter(topic =>
-        topic.name.toLowerCase().includes(searchInput)
-    );
-
-    const resultsContainer = document.getElementById('searchResults');
-    resultsContainer.innerHTML = ''; // Clear previous search results
-
-    if (matchedTopics.length > 0) {
-        // Display the first 10 matched topics for selection
-        matchedTopics.slice(0, 10).forEach(topic => {
-            const resultItem = document.createElement('li');
-            resultItem.textContent = topic.name;
-            resultItem.classList.add('search-result-item');
-            resultItem.dataset.url = topic.url; // Store URL as data attribute
-            resultsContainer.appendChild(resultItem);
-        });
-    } else {
-        // Handle case where no match is found
-        resultsContainer.innerHTML = '<li>No matching topic found.</li>';
-    }
-}
-
-// Function to perform search and display multiple matches for selection
-function search() {
-    const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
-
-    // Check if the search input is empty
-    if (searchInput === '') {
-        // Clear search results container
-        document.getElementById('searchResults').innerHTML = '';
-        return; // Exit the function if the search input is empty
-    }
-
-    // Check if the search input matches any of the topics
-    const matchedTopics = topics.filter(topic =>
-        topic.name.toLowerCase().includes(searchInput)
-    );
-
-    const resultsContainer = document.getElementById('searchResults');
-    resultsContainer.innerHTML = ''; // Clear previous search results
-
-    if (matchedTopics.length > 0) {
-        // Display the first 10 matched topics for selection
-        matchedTopics.slice(0, 10).forEach(topic => {
-            const resultItem = document.createElement('li');
-            resultItem.textContent = topic.name;
-            resultItem.classList.add('search-result-item');
-            resultItem.dataset.url = topic.url; // Store URL as data attribute
-            resultsContainer.appendChild(resultItem);
-        });
-    } else {
-        // Handle case where no match is found
-        resultsContainer.innerHTML = '<li>No matching topic found.</li>';
-    }
-}
-
-// Add event listener to the search button
-document.getElementById('searchButton').addEventListener('click', search);
-
-// Add event listeners after the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.getElementById('searchInput');
-    const searchButton = document.getElementById('searchButton');
-    const searchResults = document.getElementById('searchResults');
-
-    if (!searchInput || !searchButton || !searchResults) {
-        console.error("One or more elements not found.");
-        return;
-    }
-
-    // Add event listener to the search input for real-time search
-    searchInput.addEventListener('input', search);
-
-// Add event listener to handle click on search result items
-document.getElementById('searchResults').addEventListener('click', function(event) {
-    const clickedItem = event.target;
-    if (clickedItem.classList.contains('search-result-item')) {
-        window.location.href = clickedItem.dataset.url;
-
-        // Scroll down by half a screen length after a brief delay (50 milliseconds)
-        setTimeout(() => {
-            window.scrollBy(0, window.innerHeight / 2);
-        }, 50);
-    }
 });
 
-// Handle the Enter key to go to the first result
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
-        const topResult = document.querySelector('.search-result-item');
-        if (topResult) {
-            window.location.href = topResult.dataset.url;
-        }
-    }
-});
-
-});
