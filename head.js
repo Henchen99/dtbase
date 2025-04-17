@@ -117,7 +117,7 @@ function injectHeader() {
                 <div class="nav-link-wrapper"><a href="${relativePrefix}index.html">Home</a></div>
                 <div class="nav-link-wrapper"><a href="${relativePrefix}tutoring.html">Tutoring</a></div>
                 <div class="nav-link-wrapper"><a href="${relativePrefix}notes/notes_level.html">Notes</a></div>
-                <div class="nav-link-wrapper"><a href="${relativePrefix}exercises/exercises.html">Questions</a></div>
+                <div class="nav-link-wrapper"><a href="${relativePrefix}exercises/exercise_level.html">Questions</a></div>
                 <div class="nav-link-wrapper"><a href="${relativePrefix}pastpapers/pastpapers.html">Past Papers</a></div>
                 <div class="nav-link-wrapper"><a href="${relativePrefix}coursework/coursework.html">Coursework</a></div>
                 <div class="nav-link-wrapper"><a href="${relativePrefix}contact.html">Contact</a></div>
