@@ -54,7 +54,12 @@ const aqa_gcse_questions = [
     //3.2.7 Scales of production
     { question: "Scales of production (AQA GCSE)", url: "/Questions (Word docs)/AQA GCSE Questions/Section B - Specialist technical principles/Topic B7/3.2.7_scales_of_production.pdf" },
     //3.2.8 Specialist techniques and processes
-
+    { question: "Commercial processes (AQA GCSE)", url: "/Questions (Word docs)/AQA GCSE Questions/Section B - Specialist technical principles/Topic B8/3.2.8_commercial_processes.pdf" },
+    { question: "How materials are cut, shaped and formed to a tolerance (AQA GCSE)", url: "/Questions (Word docs)/AQA GCSE Questions/Section B - Specialist technical principles/Topic B8/3.2.8_how_materials_are_cut_shaped_and_formed_to_a_tolerance.pdf" },
+    { question: "Quality control (AQA GCSE)", url: "/Questions (Word docs)/AQA GCSE Questions/Section B - Specialist technical principles/Topic B8/3.2.8_quality_control.pdf" },
+    { question: "The use of production aids (AQA GCSE)", url: "/Questions (Word docs)/AQA GCSE Questions/Section B - Specialist technical principles/Topic B8/3.2.8_the_use_of_production_ai4s.pdf" },
+    { question: "Tools, equipment and processes (AQA GCSE)", url: "/Questions (Word docs)/AQA GCSE Questions/Section B - Specialist technical principles/Topic B8/3.2.8_tools_equipment_and_processes.pdf" },
+    //Next topic
 
 
 ];
