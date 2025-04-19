@@ -59,7 +59,9 @@ const aqa_gcse_questions = [
     { question: "Quality control (AQA GCSE)", url: "/Questions (Word docs)/AQA GCSE Questions/Section B - Specialist technical principles/Topic B8/3.2.8_quality_control.pdf" },
     { question: "The use of production aids (AQA GCSE)", url: "/Questions (Word docs)/AQA GCSE Questions/Section B - Specialist technical principles/Topic B8/3.2.8_the_use_of_production_ai4s.pdf" },
     { question: "Tools, equipment and processes (AQA GCSE)", url: "/Questions (Word docs)/AQA GCSE Questions/Section B - Specialist technical principles/Topic B8/3.2.8_tools_equipment_and_processes.pdf" },
-    //Next topic
+    //3.2.9 Surface treatments and fnishes
+    { question: "Surface treatments and fnishes (AQA GCSE)", url: "/Questions (Word docs)/AQA GCSE Questions/Section B - Specialist technical principles/Topic B9/3.2.9_surface_treatments_and_finishes.pdf" },
+
 
 
 ];
