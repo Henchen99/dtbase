@@ -584,5 +584,49 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-});
+})
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Create the floating note container
+    const floatingNote = document.createElement('div');
+    floatingNote.style.position = 'fixed';
+    floatingNote.style.top = '20px';
+    floatingNote.style.right = '20px';
+    floatingNote.style.backgroundColor = '#f8f9fa';
+    floatingNote.style.border = '1px solid #dee2e6';
+    floatingNote.style.borderRadius = '8px';
+    floatingNote.style.padding = '15px';
+    floatingNote.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+    floatingNote.style.maxWidth = '250px';
+    floatingNote.style.zIndex = '1000';
+    floatingNote.style.fontFamily = 'Arial, sans-serif';
+    floatingNote.style.fontSize = '14px';
+    floatingNote.style.color = '#333';
+
+    // Add the message
+    floatingNote.innerHTML = `
+        <p><strong>Hey User!</strong> We’re planning affordable group revision sessions for upcoming exams - only £1 per session! Interested? Email us @  
+    <a href="mailto:designtechbase@gmail.com">designtechbase@gmail.com</a> to book your place.</p>
+    `;
+
+    // Add a close button (optional)
+    const closeButton = document.createElement('button');
+    closeButton.textContent = '×';
+    closeButton.style.position = 'absolute';
+    closeButton.style.top = '5px';
+    closeButton.style.right = '5px';
+    closeButton.style.background = 'none';
+    closeButton.style.border = 'none';
+    closeButton.style.fontSize = '16px';
+    closeButton.style.cursor = 'pointer';
+    closeButton.style.color = '#999';
+
+    closeButton.addEventListener('click', function() {
+        floatingNote.remove();
+    });
+
+    floatingNote.appendChild(closeButton);
+    document.body.appendChild(floatingNote);
+});;
 
