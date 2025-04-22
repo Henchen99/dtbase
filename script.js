@@ -606,7 +606,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add the message
     floatingNote.innerHTML = `
-        <p><strong>Hey User!</strong> We’re planning affordable online group revision sessions for upcoming A-Level/GCSE exams - pay what you can (suggested donation: £5 per session). Interested? Email us @  
+        <p><strong>Hey User!</strong> We’re planning affordable online group revision sessions for upcoming A-Level/GCSE exams - pay what you can (suggested amount: £5 per session). Interested? Email us @  
     <a href="mailto:designtechbase@gmail.com">designtechbase@gmail.com</a> to book your place.</p>
     `;
 
