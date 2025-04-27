@@ -1,11 +1,21 @@
 const aqa_alevel_questions = [
-    { question: "Industry (AQA GCSE)", url: "Questions (Word docs)/AQA GCSE Questions/Section A - Core technical principles/Topic A1/3.1.1_Industry.pdf" },
-    //Woods^^^
+    //3.1.1 Materials and their applications
+    { question: "Materials and their applications (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A1/3.1.1_materials_and_their_applications.pdf" },
+    { question: "Classification of materials (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A1/3.1.1_classification_of_materials.pdf" },
+    { question: "Methods for investigating and testing materials (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A1/3.1.1_methods_for_investigating_and_testing_materials.pdf" },
+    //3.1.5 The use of finishes
+    { question: "Paper and board finishing (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A5/3.1.5_paper_and_board_finishing.pdf" },
+    { question: "Paper and board printing processes (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A5/3.1.5_paper_and_board_printing_processes.pdf" },
+    { question: "Polymer finishing (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A5/3.1.5_polymer_finishing.pdf" },
+    { question: "Metal finishing (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A5/3.1.5_metal_finishing.pdf" },
+    { question: "Wood finishing (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A5/3.1.5_wood_finishing.pdf" },
+    //3.1.11 Design for manufacturing, maintenance, repair and disposal
+    { question: "Manufacture, repair, maintenance and disposal (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A11/3.1.11_manufacture_repair_maintenance_and_disposal.pdf" },
+    { question: "Ease of manufacture (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A11/3.1.11_ease_of_manufacture.pdf" },
+    { question: "Disassembly (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A11/3.1.11_disassembly.pdf" },
+
     
 ];
-
-
-    
 
 
 // Function to perform search and display multiple matches for selection
@@ -20,7 +30,7 @@ function search() {
     }
 
     // Check if the search input matches any of the questions
-    const matchedQuestions = questions
+    const matchedQuestions = aqa_alevel_questions
         .filter(question =>
             question.question.toLowerCase().includes(searchInput)
         )
@@ -66,28 +76,6 @@ document.addEventListener('keydown', function(event) {
 });
 
 
-
-
-
-
-
-
-// const hamburgers = document.getElementsByClassName('hamburger')[0];
-// const nav_link_wrapper = document.getElementsByName('nav-link-wrapper')[0];
-
-// hamburgers.addEventListener('click', () => {
-//     nav_link_wrapper.classList.toggle('active');
-// })
-
-
-// const toggleButton = document.getElementsByClassName('hamburger')[0]
-// const navbarLinks = document.getElementsByClassName('nav-link-wrapper')[0]
-
-// toggleButton.addEventListener('click', () => {
-//   navbarLinks.classList.toggle('active')
-// })
-
-
 const toggleButton = document.getElementsByClassName('hamburger')[0];
 const navbarLinks = document.querySelectorAll('.nav-link-wrapper');
 
@@ -99,54 +87,6 @@ toggleButton.addEventListener('click', () => {
 
 });
 
-// const toggleArrow = document.getElementsByClassName('drop_down')[0];
-// const courseworkDrop = document.querySelectorAll('.portfolio-item-wrapper-notes-coursework');
-
-// toggleArrow.addEventListener('click', () => {
-//     console.log("Clicked");
-//     toggleArrow.classList.toggle('active');
-//     courseworkDrop.forEach((it) => {
-//         it.classList.toggle('active');
-//     });
-// });
-
-// const toggleArrow_pastpaper = document.getElementsByClassName('drop_down_pp')[0];
-// const pastpaperDrop = document.querySelectorAll('.portfolio-item-wrapper-notes-pastpaper');
-
-// toggleArrow_pastpaper.addEventListener('click', () => {
-//     console.log("Clicked");
-//     toggleArrow_pastpaper.classList.toggle('active');
-//     pastpaperDrop.forEach((it) => {
-//         it.classList.toggle('active');
-//     });
-// });
-
-
-// const toggleArrowsPastpaper = document.querySelectorAll('.drop_down_pp');
-// const pastpaperDrops = document.querySelectorAll('.portfolio-item-wrapper-notes-pastpaper');
-
-// toggleArrowsPastpaper.forEach((toggleArrow_pastpaper) => {
-//     toggleArrow_pastpaper.addEventListener('click', () => {
-//         console.log("Clicked");
-//         toggleArrow_pastpaper.classList.toggle('active');
-//         pastpaperDrops.forEach((it) => {
-//             it.classList.toggle('active');
-//         });
-//     });
-// });
-
-// const toggleArrows = document.querySelectorAll('.drop_down');
-// const courseworkDrops = document.querySelectorAll('.portfolio-item-wrapper-notes-coursework');
-
-// toggleArrows.forEach((toggleArrow) => {
-//     toggleArrow.addEventListener('click', () => {
-//         console.log("Clicked");
-//         toggleArrow.classList.toggle('active');
-//         courseworkDrops.forEach((it) => {
-//             it.classList.toggle('active');
-//         });
-//     });
-// });
 
 const toggleArrowsPastpaper = document.querySelectorAll('.drop_down_pp');
 
@@ -173,4 +113,3 @@ toggleArrows.forEach((toggleArrow) => {
         });
     });
 });
-

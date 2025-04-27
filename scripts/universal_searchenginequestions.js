@@ -490,9 +490,30 @@ const aqa_gcse_questions = [
     { question: "Surface treatments and fnishes (AQA GCSE)", url: "/Questions (Word docs)/AQA GCSE Questions/Section B - Specialist technical principles/Topic B9/3.2.9_surface_treatments_and_finishes.pdf" },
 ];
 
+
+const aqa_alevel_questions = [
+    //3.1.1 Materials and their applications
+    { question: "Materials and their applications (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A1/3.1.1_materials_and_their_applications.pdf" },
+    { question: "Classification of materials (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A1/3.1.1_classification_of_materials.pdf" },
+    { question: "Methods for investigating and testing materials (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A1/3.1.1_methods_for_investigating_and_testing_materials.pdf" },
+    //3.1.5 The use of finishes
+    { question: "Paper and board finishing (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A5/3.1.5_paper_and_board_finishing.pdf" },
+    { question: "Paper and board printing processes (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A5/3.1.5_paper_and_board_printing_processes.pdf" },
+    { question: "Polymer finishing (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A5/3.1.5_polymer_finishing.pdf" },
+    { question: "Metal finishing (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A5/3.1.5_metal_finishing.pdf" },
+    { question: "Wood finishing (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A5/3.1.5_wood_finishing.pdf" },
+    //3.1.11 Design for manufacturing, maintenance, repair and disposal
+    { question: "Manufacture, repair, maintenance and disposal (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A11/3.1.11_manufacture_repair_maintenance_and_disposal.pdf" },
+    { question: "Ease of manufacture (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A11/3.1.11_ease_of_manufacture.pdf" },
+    { question: "Disassembly (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A11/3.1.11_disassembly.pdf" },
+
+    
+];
+
 const allQuestions = [
     ...aqa_gcse_questions,
-    ...edexcel_alevel_questions
+    ...edexcel_alevel_questions,
+    ...aqa_alevel_questions
 ];
     
 
