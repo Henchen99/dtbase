@@ -502,6 +502,17 @@ const aqa_alevel_questions = [
     { question: "Polymer finishing (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A5/3.1.5_polymer_finishing.pdf" },
     { question: "Metal finishing (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A5/3.1.5_metal_finishing.pdf" },
     { question: "Wood finishing (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A5/3.1.5_wood_finishing.pdf" },
+    //3.1.2 Performance characteristics of materials
+    { question: "Performance characteristics of papers and boards (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A2/3.1.2_papers_and_boards.pdf" },
+    { question: "Performance characteristics of polymer based sheet and film (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A2/3.1.2_polymer_based_sheet_and_film.pdf" },
+    { question: "Performance characteristics of woods (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A2/3.1.2_woods.pdf" },
+    { question: "Performance characteristics of metals (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A2/3.1.2_metals.pdf" },
+    { question: "Performance characteristics of polymers (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A2/3.1.2_polymers.pdf" },
+    { question: "Elastomers (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A2/3.1.2_elastomers.pdf" },
+    { question: "Biodegradable polymers (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A2/3.1.2_biodegradable_polymers.pdf" },
+    { question: "Composites (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A2/3.1.2_composites.pdf" },
+    { question: "Smart materials (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A2/3.1.2_smart_materials.pdf" },
+    { question: "Modern materials (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A2/3.1.2_modern_materials.pdf" },
     //3.1.11 Design for manufacturing, maintenance, repair and disposal
     { question: "Manufacture, repair, maintenance and disposal (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A11/3.1.11_manufacture_repair_maintenance_and_disposal.pdf" },
     { question: "Ease of manufacture (AQA A-Level)", url: "/Questions (Word docs)/AQA A-Level Questions/Technical Principles/Topic A11/3.1.11_ease_of_manufacture.pdf" },
