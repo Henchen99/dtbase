@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </style>
         <div class="footer">
             <div class="footer-content">
-               <p><strong> Email: designtechbase@gmail.com | DTBase</strong></p>
+               <p><strong> Email: <a href="mailto:designtechbase@gmail.com">designtechbase@gmail.com</a> | DTBase</strong></p>
             </div>
             <div class="footer-bottom">
                 <nav>
